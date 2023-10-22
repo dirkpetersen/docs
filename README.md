@@ -1,2 +1,2 @@
 # docs
-Focuments, artictes and drafts 
+Documents, artictes and drafts 
