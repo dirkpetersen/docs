@@ -4,19 +4,60 @@ Essential setup and configuration for working with GitHub repositories.
 
 ## SSH Key Setup
 
-Using SSH keys provides secure, password-free authentication with GitHub. This guide covers generating and configuring SSH keys.
+SSH key generation and keychain management are covered in the [Shell](../shell/index.md) section. Follow that guide first to:
 
-### Generate SSH Key
+1. Generate your SSH key with a passphrase
+2. Configure SSH permissions
+3. Set up SSH keychain to cache your passphrase
 
-Generate a new SSH key pair:
+After completing the Shell setup, come back here to push your key to GitHub.
+
+## Add SSH Key to GitHub
+
+### Option 1: Quick Setup with GitHub CLI (Recommended)
+
+The fastest way to add your SSH key to GitHub is using the GitHub CLI:
+
+1. **Install GitHub CLI**
 
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519
+# On Ubuntu/WSL
+sudo apt-get update
+sudo apt-get install gh
+
+# On macOS
+brew install gh
+
+# Or download from https://github.com/cli/cli/releases
 ```
 
-When prompted for a passphrase, **enter a strong password** to protect your key. You'll enter this password once and it will be stored in your system keychain.
+2. **Authenticate with GitHub**
 
-### Add SSH Key to GitHub
+```bash
+gh auth login
+```
+
+Follow the prompts:
+- Select "GitHub.com"
+- Select "SSH" for git protocol
+- Use your existing SSH key
+- Authorize GitHub CLI to manage SSH keys
+
+3. **Automatic SSH key upload**
+
+GitHub CLI will automatically detect your SSH key and upload it to your GitHub account during `gh auth login`.
+
+4. **Verify setup**
+
+```bash
+gh auth status
+```
+
+You should see confirmation of your authenticated account.
+
+### Option 2: Manual GitHub Web Interface
+
+If you prefer the web interface:
 
 1. Display your public key:
 
@@ -32,9 +73,9 @@ cat ~/.ssh/id_ed25519.pub
 
 5. Click "Add SSH key"
 
-### Test SSH Connection
+## Test SSH Connection
 
-Verify your SSH setup:
+Verify your SSH setup works with GitHub:
 
 ```bash
 ssh -T git@github.com
@@ -45,43 +86,6 @@ You should see:
 ```
 Hi YOUR_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
-
-## Using SSH Keychain to Store Passwords
-
-Protect your SSH key passphrase by storing it in your system keychain. This way you only enter your password once per session.
-
-### Linux with WSL
-
-For WSL2 on Windows, use ssh-keychain to manage your SSH key passphrase:
-
-1. **Install ssh-keychain**
-
-```bash
-sudo apt-get update
-sudo apt-get install ssh-askpass ssh-keychain
-```
-
-2. **Add to your shell configuration** (`.bashrc`, `.zshrc`, etc.)
-
-```bash
-# SSH Keychain - unlocks SSH key passphrase once per session
-eval $(ssh-keychain -q -t 4h ~/.ssh/id_ed25519)
-```
-
-3. **Reload your shell**
-
-```bash
-source ~/.bashrc  # or ~/.zshrc
-```
-
-4. **First SSH command of the session**
-
-On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase. Enter it once and it will be cached in keychain for the next 4 hours.
-
-### Reference
-
-For more details on SSH keychain setup with WSL:
-https://askubuntu.com/questions/1356352/install-ssh-keychain-on-ubuntu-with-wsl
 
 ## Basic Git Workflow
 
