@@ -32,21 +32,60 @@ chmod 644 ~/.ssh/id_ed25519.pub
 
 ### SSH Configuration
 
-Create or edit `~/.ssh/config` to simplify SSH connections:
+Create or edit `~/.ssh/config` to simplify SSH connections and optimize performance:
 
 ```bash
+# SSH Connection Multiplexing and Global Defaults
+Host *
+    ControlPath ~/.ssh/controlmasters/%r@%h:%p
+    ControlMaster auto
+    ControlPersist 10m
+    ServerAliveInterval 10
+    ServerAliveCountMax 3
+    User your-username
+
+# GitHub
 Host github.com
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_ed25519
     AddKeysToAgent yes
 
-Host *
-    ServerAliveInterval 60
-    ServerAliveCountMax 10
+# Jump Host Example
+Host jumphost
+    HostName jump.example.com
+    ControlMaster auto
+    DynamicForward 1080
+
+# Remote Server Behind Jump Host
+Host remote-server
+    HostName server.example.com
+    ProxyJump jumphost
 ```
 
-The `AddKeysToAgent yes` option automatically adds your key to the SSH agent when you connect.
+**Key Configuration Options:**
+
+- `ControlPath`: Directory for multiplexed connections (creates `.ssh/controlmasters/` dir)
+- `ControlMaster auto`: Automatically reuse connections
+- `ControlPersist 10m`: Keep connections alive for 10 minutes
+- `ServerAliveInterval 10`: Send keepalive every 10 seconds
+- `ServerAliveCountMax 3`: Disconnect after 3 missed keepalives
+- `ProxyJump`: Chain connections through jump host
+- `DynamicForward`: Enable SOCKS proxy through host
+
+**Setup multiplexing directory:**
+
+```bash
+mkdir -p ~/.ssh/controlmasters
+chmod 700 ~/.ssh/controlmasters
+```
+
+**Benefits:**
+
+- **Faster connections**: Reuses SSH connections, eliminates repeated authentication
+- **Reliable**: Keepalive prevents timeouts on idle connections
+- **Secure**: Jump host proxy keeps direct connections private
+- **Flexible**: Works with any remote host configuration
 
 ## SSH Keychain
 
