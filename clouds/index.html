@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/github/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/clouds/">
       
       
-        <link rel="prev" href="../wsl/">
+        <link rel="prev" href="../nvidia/">
       
       
-        <link rel="next" href="../claude-code/">
+        <link rel="next" href="aws/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>GitHub - Dirk Petersen's Documentation</title>
+        <title>Overview - Dirk Petersen's Documentation</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#github" class="md-skip">
+        <a href="#cloud-platforms" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub
+              Overview
             
           </span>
         </div>
@@ -272,11 +272,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../github/" class="md-tabs__link">
         
   
   
@@ -350,11 +348,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../clouds/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -487,32 +487,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    GitHub
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../github/" class="md-nav__link">
         
   
   
@@ -523,146 +501,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ssh-key-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      SSH Key Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-ssh-key-to-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add SSH Key to GitHub
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Add SSH Key to GitHub">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-quick-setup-with-github-cli-recommended" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 1: Quick Setup with GitHub CLI (Recommended)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-manual-github-web-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 2: Manual GitHub Web Interface
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-ssh-connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test SSH Connection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-git-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Git Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Basic Git Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#clone-a-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clone a Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-and-switch-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create and Switch Branches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#make-changes-and-commit" class="md-nav__link">
-    <span class="md-ellipsis">
-      Make Changes and Commit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#push-to-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Push to GitHub
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-pull-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create a Pull Request
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloning-your-first-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cloning Your First Repository
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -737,26 +575,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -769,7 +612,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Clouds
@@ -780,10 +623,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../clouds/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -794,6 +659,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-a-cloud-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a Cloud Provider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-setup-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Setup Patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -806,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/aws/" class="md-nav__link">
+      <a href="aws/" class="md-nav__link">
         
   
   
@@ -829,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/azure/" class="md-nav__link">
+      <a href="azure/" class="md-nav__link">
         
   
   
@@ -852,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/gcp/" class="md-nav__link">
+      <a href="gcp/" class="md-nav__link">
         
   
   
@@ -902,120 +832,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ssh-key-setup" class="md-nav__link">
+  <a href="#supported-platforms" class="md-nav__link">
     <span class="md-ellipsis">
-      SSH Key Setup
+      Supported Platforms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-ssh-key-to-github" class="md-nav__link">
+  <a href="#choosing-a-cloud-provider" class="md-nav__link">
     <span class="md-ellipsis">
-      Add SSH Key to GitHub
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Add SSH Key to GitHub">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-quick-setup-with-github-cli-recommended" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 1: Quick Setup with GitHub CLI (Recommended)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-manual-github-web-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 2: Manual GitHub Web Interface
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-ssh-connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test SSH Connection
+      Choosing a Cloud Provider
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-git-workflow" class="md-nav__link">
+  <a href="#common-setup-patterns" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic Git Workflow
+      Common Setup Patterns
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Basic Git Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#clone-a-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clone a Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-and-switch-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create and Switch Branches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#make-changes-and-commit" class="md-nav__link">
-    <span class="md-ellipsis">
-      Make Changes and Commit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#push-to-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Push to GitHub
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-pull-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create a Pull Request
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloning-your-first-repository" class="md-nav__link">
+  <a href="#security-principles" class="md-nav__link">
     <span class="md-ellipsis">
-      Cloning Your First Repository
+      Security Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -1040,104 +895,91 @@
   
 
 
-<h1 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
-<p>Essential setup and configuration for working with GitHub repositories.</p>
-<h2 id="ssh-key-setup">SSH Key Setup<a class="headerlink" href="#ssh-key-setup" title="Permanent link">&para;</a></h2>
-<p>SSH key generation and keychain management are covered in the <a href="../shell/">Shell</a> section. Follow that guide first to:</p>
+<h1 id="cloud-platforms">Cloud Platforms<a class="headerlink" href="#cloud-platforms" title="Permanent link">&para;</a></h1>
+<p>Guide to major cloud service providers and their configuration for development and deployment.</p>
+<h2 id="supported-platforms">Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="aws/">AWS</a></strong> - Amazon Web Services</li>
+<li><strong><a href="azure/">Azure</a></strong> - Microsoft Azure</li>
+<li><strong><a href="gcp/">Google Cloud</a></strong> - Google Cloud Platform</li>
+</ul>
+<h2 id="choosing-a-cloud-provider">Choosing a Cloud Provider<a class="headerlink" href="#choosing-a-cloud-provider" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>AWS</th>
+<th>Azure</th>
+<th>GCP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Services</strong></td>
+<td>Broadest portfolio</td>
+<td>Enterprise integration</td>
+<td>Data/ML focused</td>
+</tr>
+<tr>
+<td><strong>Global Reach</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><strong>Pricing</strong></td>
+<td>Competitive</td>
+<td>Enterprise discounts</td>
+<td>Compute competitive</td>
+</tr>
+<tr>
+<td><strong>ML/AI</strong></td>
+<td>SageMaker, Bedrock</td>
+<td>Cognitive Services</td>
+<td>Vertex AI</td>
+</tr>
+<tr>
+<td><strong>Kubernetes</strong></td>
+<td>EKS</td>
+<td>AKS</td>
+<td>GKE</td>
+</tr>
+<tr>
+<td><strong>Best For</strong></td>
+<td>General purpose</td>
+<td>Microsoft ecosystem</td>
+<td>Data science</td>
+</tr>
+</tbody>
+</table>
+<h2 id="common-setup-patterns">Common Setup Patterns<a class="headerlink" href="#common-setup-patterns" title="Permanent link">&para;</a></h2>
+<p>Each cloud provider section includes:</p>
 <ol>
-<li>Generate your SSH key with a passphrase</li>
-<li>Configure SSH permissions</li>
-<li>Set up SSH keychain to cache your passphrase</li>
+<li><strong>CLI Installation</strong> - Command-line tools</li>
+<li><strong>Authentication Setup</strong> - Credentials and configuration</li>
+<li><strong>Service-Specific Profiles</strong> - Isolated, scoped access</li>
+<li><strong>Best Practices</strong> - Security and cost optimization</li>
+<li><strong>Common Use Cases</strong> - Getting started examples</li>
 </ol>
-<p>After completing the Shell setup, come back here to push your key to GitHub.</p>
-<h2 id="add-ssh-key-to-github">Add SSH Key to GitHub<a class="headerlink" href="#add-ssh-key-to-github" title="Permanent link">&para;</a></h2>
-<h3 id="option-1-quick-setup-with-github-cli-recommended">Option 1: Quick Setup with GitHub CLI (Recommended)<a class="headerlink" href="#option-1-quick-setup-with-github-cli-recommended" title="Permanent link">&para;</a></h3>
-<p>The fastest way to add your SSH key to GitHub is using the GitHub CLI:</p>
-<ol>
-<li><strong>Install GitHub CLI</strong></li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="c1"># On Ubuntu/WSL</span>
-sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>gh
-
-<span class="c1"># On macOS</span>
-brew<span class="w"> </span>install<span class="w"> </span>gh
-
-<span class="c1"># Or download from https://github.com/cli/cli/releases</span>
-</code></pre></div>
-<ol>
-<li><strong>Authenticate with GitHub</strong></li>
-</ol>
-<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>login
-</code></pre></div>
-<p>Follow the prompts:
-- Select "GitHub.com"
-- Select "SSH" for git protocol
-- Use your existing SSH key
-- Authorize GitHub CLI to manage SSH keys</p>
-<ol>
-<li><strong>Automatic SSH key upload</strong></li>
-</ol>
-<p>GitHub CLI will automatically detect your SSH key and upload it to your GitHub account during <code>gh auth login</code>.</p>
-<ol>
-<li><strong>Verify setup</strong></li>
-</ol>
-<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>status
-</code></pre></div>
-<p>You should see confirmation of your authenticated account.</p>
-<h3 id="option-2-manual-github-web-interface">Option 2: Manual GitHub Web Interface<a class="headerlink" href="#option-2-manual-github-web-interface" title="Permanent link">&para;</a></h3>
-<p>If you prefer the web interface:</p>
-<ol>
-<li>Display your public key:</li>
-</ol>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/id_ed25519.pub
-</code></pre></div>
-<ol>
-<li>
-<p>Copy the entire output</p>
-</li>
-<li>
-<p>Go to GitHub Settings → SSH and GPG keys → <a href="https://github.com/settings/ssh/new">New SSH key</a></p>
-</li>
-<li>
-<p>Paste your public key and give it a descriptive title (e.g., "My Laptop")</p>
-</li>
-<li>
-<p>Click "Add SSH key"</p>
-</li>
-</ol>
-<h2 id="test-ssh-connection">Test SSH Connection<a class="headerlink" href="#test-ssh-connection" title="Permanent link">&para;</a></h2>
-<p>Verify your SSH setup works with GitHub:</p>
-<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
-</code></pre></div>
-<p>You should see:</p>
-<div class="highlight"><pre><span></span><code>Hi YOUR_USERNAME! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre></div>
-<h2 id="basic-git-workflow">Basic Git Workflow<a class="headerlink" href="#basic-git-workflow" title="Permanent link">&para;</a></h2>
-<h3 id="clone-a-repository">Clone a Repository<a class="headerlink" href="#clone-a-repository" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:USERNAME/repository.git
-<span class="nb">cd</span><span class="w"> </span>repository
-</code></pre></div>
-<h3 id="create-and-switch-branches">Create and Switch Branches<a class="headerlink" href="#create-and-switch-branches" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/my-feature
-</code></pre></div>
-<h3 id="make-changes-and-commit">Make Changes and Commit<a class="headerlink" href="#make-changes-and-commit" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Describe your changes&quot;</span>
-</code></pre></div>
-<h3 id="push-to-github">Push to GitHub<a class="headerlink" href="#push-to-github" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/my-feature
-</code></pre></div>
-<h3 id="create-a-pull-request">Create a Pull Request<a class="headerlink" href="#create-a-pull-request" title="Permanent link">&para;</a></h3>
-<p>After pushing, visit your repository on GitHub and create a pull request to merge your branch.</p>
-<h2 id="cloning-your-first-repository">Cloning Your First Repository<a class="headerlink" href="#cloning-your-first-repository" title="Permanent link">&para;</a></h2>
-<p>Your first GitHub repository can be cloned locally:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:YOUR_USERNAME/your-repo.git
-<span class="nb">cd</span><span class="w"> </span>your-repo
-</code></pre></div>
-<p>Then you can run Claude Code inside:</p>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>.
-</code></pre></div>
+<h2 id="security-principles">Security Principles<a class="headerlink" href="#security-principles" title="Permanent link">&para;</a></h2>
+<p>Across all cloud providers:</p>
+<ul>
+<li>✅ Use service-specific profiles/roles</li>
+<li>✅ Apply least-privilege IAM policies</li>
+<li>✅ Rotate credentials regularly</li>
+<li>✅ Use temporary/session credentials when possible</li>
+<li>✅ Enable audit logging (CloudTrail, Activity Log, Cloud Audit Logs)</li>
+<li>❌ Never use admin credentials for routine work</li>
+<li>❌ Don't commit credentials to version control</li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Start with your primary cloud provider</li>
+<li>Configure authentication and credentials</li>
+<li>Create service-specific profiles for applications</li>
+<li>Review IAM policies for least privilege</li>
+<li>Enable cost monitoring and alerts</li>
+</ul>
 
 
 
