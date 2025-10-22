@@ -65,31 +65,99 @@ Make it executable:
 chmod +x ~/bin/claude
 ```
 
+## Important: Git Repository Requirement
+
+**Claude Code must always be initialized inside a git repository.** This is a requirement for the tool to function properly.
+
+### Setting Up a Git Repository
+
+You have two options:
+
+#### Option 1: Create a Local Repository
+
+```bash
+mkdir my-project
+cd my-project
+git init
+```
+
+Then run Claude Code inside this directory:
+
+```bash
+claude .
+```
+
+#### Option 2: Create a Repository on GitHub
+
+1. Visit [github.com/new](https://github.com/new) to create a new repository
+2. Clone it to your local machine:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/my-project.git
+cd my-project
+```
+
+3. Run Claude Code:
+
+```bash
+claude .
+```
+
+## Model Comparison
+
+Understanding the differences between the three available models helps you choose the right tool for each task:
+
+| Aspect | Haiku | Sonnet | Opus |
+|--------|-------|--------|------|
+| **Speed** | ⚡ Fast | ⚡⚡ Medium | 🐌 Slow |
+| **Cost** | 💰 $0.80/MTok | 💰💰 $3.00/MTok | 💰💰💰 $15.00/MTok |
+| **Performance** | Excellent | Very Good | Superior |
+| **Complex Tasks** | ⭐ | ⭐⭐⭐ Medium | ⭐⭐⭐⭐⭐ High |
+| **Coding Skills** | ⭐⭐ Medium | ⭐⭐⭐ Good | ⭐⭐⭐⭐⭐ Excellent |
+
 ## Usage
 
 ### Default (Haiku - Fast)
 
-Run Claude Code with the default fast Haiku model:
+Run Claude Code with the default fast Haiku model for quick fixes and simple tasks:
 
 ```bash
 claude /path/to/project
 ```
 
+**Best for:**
+- Quick bug fixes
+- Simple code generation
+- Refactoring small sections
+- Cost-conscious tasks
+
 ### Sonnet (Balanced)
 
-Run with the more capable Sonnet model:
+Run with the balanced Sonnet model for most development work:
 
 ```bash
 claude sonnet /path/to/project
 ```
 
+**Best for:**
+- Complex feature development
+- Detailed code analysis
+- Medium-complexity problems
+- Good balance of speed and capability
+
 ### Opus (Most Capable)
 
-Run with the most capable Opus model:
+Run with the most capable Opus model for challenging problems:
 
 ```bash
 claude opus /path/to/project
 ```
+
+**Best for:**
+- Difficult architectural decisions
+- Complex problem-solving
+- Full-project analysis
+- Maximum capability required
 
 ## Configuration Notes
 

@@ -37,6 +37,9 @@ plugins:
 nav:
   - Home: index.md
   - Claude Code: claude-code/index.md
+  - GitHub: github/index.md
+  - Python: python/index.md
+  - Shell: shell/index.md
   - WSL: wsl/index.md
   - AWS: aws/index.md
   - Nvidia: nvidia/index.md
