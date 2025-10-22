@@ -1105,18 +1105,55 @@ chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~
 chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>~/.ssh/id_ed25519.pub
 </code></pre></div>
 <h3 id="ssh-configuration">SSH Configuration<a class="headerlink" href="#ssh-configuration" title="Permanent link">&para;</a></h3>
-<p>Create or edit <code>~/.ssh/config</code> to simplify SSH connections:</p>
-<div class="highlight"><pre><span></span><code>Host<span class="w"> </span>github.com
+<p>Create or edit <code>~/.ssh/config</code> to simplify SSH connections and optimize performance:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SSH Connection Multiplexing and Global Defaults</span>
+Host<span class="w"> </span>*
+<span class="w">    </span>ControlPath<span class="w"> </span>~/.ssh/controlmasters/%r@%h:%p
+<span class="w">    </span>ControlMaster<span class="w"> </span>auto
+<span class="w">    </span>ControlPersist<span class="w"> </span>10m
+<span class="w">    </span>ServerAliveInterval<span class="w"> </span><span class="m">10</span>
+<span class="w">    </span>ServerAliveCountMax<span class="w"> </span><span class="m">3</span>
+<span class="w">    </span>User<span class="w"> </span>your-username
+
+<span class="c1"># GitHub</span>
+Host<span class="w"> </span>github.com
 <span class="w">    </span>HostName<span class="w"> </span>github.com
 <span class="w">    </span>User<span class="w"> </span>git
 <span class="w">    </span>IdentityFile<span class="w"> </span>~/.ssh/id_ed25519
 <span class="w">    </span>AddKeysToAgent<span class="w"> </span>yes
 
-Host<span class="w"> </span>*
-<span class="w">    </span>ServerAliveInterval<span class="w"> </span><span class="m">60</span>
-<span class="w">    </span>ServerAliveCountMax<span class="w"> </span><span class="m">10</span>
+<span class="c1"># Jump Host Example</span>
+Host<span class="w"> </span>jumphost
+<span class="w">    </span>HostName<span class="w"> </span>jump.example.com
+<span class="w">    </span>ControlMaster<span class="w"> </span>auto
+<span class="w">    </span>DynamicForward<span class="w"> </span><span class="m">1080</span>
+
+<span class="c1"># Remote Server Behind Jump Host</span>
+Host<span class="w"> </span>remote-server
+<span class="w">    </span>HostName<span class="w"> </span>server.example.com
+<span class="w">    </span>ProxyJump<span class="w"> </span>jumphost
 </code></pre></div>
-<p>The <code>AddKeysToAgent yes</code> option automatically adds your key to the SSH agent when you connect.</p>
+<p><strong>Key Configuration Options:</strong></p>
+<ul>
+<li><code>ControlPath</code>: Directory for multiplexed connections (creates <code>.ssh/controlmasters/</code> dir)</li>
+<li><code>ControlMaster auto</code>: Automatically reuse connections</li>
+<li><code>ControlPersist 10m</code>: Keep connections alive for 10 minutes</li>
+<li><code>ServerAliveInterval 10</code>: Send keepalive every 10 seconds</li>
+<li><code>ServerAliveCountMax 3</code>: Disconnect after 3 missed keepalives</li>
+<li><code>ProxyJump</code>: Chain connections through jump host</li>
+<li><code>DynamicForward</code>: Enable SOCKS proxy through host</li>
+</ul>
+<p><strong>Setup multiplexing directory:</strong></p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.ssh/controlmasters
+chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh/controlmasters
+</code></pre></div>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Faster connections</strong>: Reuses SSH connections, eliminates repeated authentication</li>
+<li><strong>Reliable</strong>: Keepalive prevents timeouts on idle connections</li>
+<li><strong>Secure</strong>: Jump host proxy keeps direct connections private</li>
+<li><strong>Flexible</strong>: Works with any remote host configuration</li>
+</ul>
 <h2 id="ssh-keychain">SSH Keychain<a class="headerlink" href="#ssh-keychain" title="Permanent link">&para;</a></h2>
 <p>Use SSH keychain to securely store your SSH key passphrase in memory, eliminating the need to re-enter it for every SSH command.</p>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
