@@ -303,6 +303,10 @@ Writage is a plugin for Microsoft Word that allows you to:
 
 **How to Use Writage**
 
+
+<img width="298" height="150" alt="image" src="https://github.com/user-attachments/assets/ea44003d-e7f4-4ae5-a2b1-8b861eb37434" />
+
+
 ### Opening Markdown Files
 
 ```
