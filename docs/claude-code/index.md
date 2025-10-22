@@ -37,7 +37,7 @@ npm i -g @anthropic-ai/claude-code
 
 ### 4. Create Wrapper Script
 
-Create a wrapper script at `~/bin/claude` to simplify usage:
+Create a wrapper script at `~/bin/claude` to simplify usage and model selection:
 
 ```bash
 #! /bin/bash
@@ -59,11 +59,50 @@ fi
 ~/.claude/local/claude --dangerously-skip-permissions --model $mymodel $@
 ```
 
-Make it executable:
+### 5. Make Script Executable and Add to PATH
+
+First, create the `~/bin` directory if it doesn't exist:
+
+```bash
+mkdir -p ~/bin
+```
+
+Make the script executable:
 
 ```bash
 chmod +x ~/bin/claude
 ```
+
+Add `~/bin` to your PATH by adding this to your shell configuration (`.bashrc`, `.zshrc`):
+
+```bash
+export PATH="$HOME/bin:$PATH"
+```
+
+Reload your shell:
+
+```bash
+source ~/.bashrc  # or ~/.zshrc
+```
+
+### 6. Test Claude Code
+
+Test that everything is set up correctly:
+
+```bash
+# Create a test directory
+mkdir -p ~/test-project
+cd ~/test-project
+git init
+
+# Launch Claude Code with default Haiku model
+claude .
+```
+
+When Claude Code launches for the first time, it will:
+1. Ask for your SSH keychain passphrase (cached for 4 hours)
+2. Initialize the Claude Code environment
+3. Start the interactive session in the git repository
 
 ## Important: Git Repository Requirement
 
