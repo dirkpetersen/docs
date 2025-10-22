@@ -36,7 +36,11 @@ plugins:
 
 nav:
   - Home: index.md
-  - Shell: shell/index.md
+  - Shell:
+      - Overview: shell/index.md
+      - Basic: shell/basic/index.md
+      - SSH: shell/ssh/index.md
+      - Git: shell/git/index.md
   - WSL: wsl/index.md
   - GitHub: github/index.md
   - Claude Code: claude-code/index.md
