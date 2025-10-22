@@ -4,7 +4,7 @@ Essential setup and configuration for working with GitHub repositories.
 
 ## SSH Key Setup
 
-SSH key generation and keychain management are covered in the [Shell](../shell/index.md) section. Follow that guide first to:
+SSH key generation and keychain management are covered in the [Shell](../../shell/index.md) section. Follow that guide first to:
 
 1. Generate your SSH key with a passphrase
 2. Configure SSH permissions

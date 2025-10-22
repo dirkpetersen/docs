@@ -7,21 +7,20 @@ Welcome to a comprehensive guide for setting up and working with a modern, secur
 New to this setup? Start here:
 
 1. **[Shell](shell/index.md)** - Configure your Unix environment with SSH multiplexing and keychain
-2. **[GitHub](github/index.md)** - Set up Git authentication using GitHub CLI
-3. **[Claude Code](claude-code/index.md)** - Configure AI-assisted development with AWS Bedrock
-4. **[Python](python/index.md)** - Set up Python development with UV or Pixi
+2. **[Code Pasting](code-pasting/index.md)** - Modern development: clear requirements, AI-assisted coding
 
 ## Complete Documentation
 
 ### Foundation & Tools
 
 - **[Shell](shell/index.md)** - SSH key management, Git configuration, WSL setup, shell profiles
-- **[GitHub](github/index.md)** - GitHub CLI, SSH authentication, basic Git workflows
 
-### Development
+### Development (Code Pasting)
 
-- **[Claude Code](claude-code/index.md)** - AI-powered development with Bedrock, model comparison (Haiku/Sonnet/Opus), git repository requirements
-- **[Python](python/index.md)** - Indigo Python distribution, UV package manager, Pixi for conda compatibility
+- **[Markdown](code-pasting/markdown/index.md)** - Documentation and requirement specification for AI
+- **[GitHub](code-pasting/github/index.md)** - Version control and collaboration
+- **[Claude Code](code-pasting/claude-code/index.md)** - AI-assisted development with Bedrock
+- **[Python](code-pasting/python/index.md)** - Ecosystem for AI and scientific computing
 
 ### Infrastructure
 

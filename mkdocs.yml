@@ -42,9 +42,12 @@ nav:
       - SSH: shell/ssh/index.md
       - Git: shell/git/index.md
       - WSL: shell/wsl/index.md
-  - GitHub: github/index.md
-  - Claude Code: claude-code/index.md
-  - Python: python/index.md
+  - Code Pasting:
+      - Overview: code-pasting/index.md
+      - Markdown: code-pasting/markdown/index.md
+      - GitHub: code-pasting/github/index.md
+      - Claude Code: code-pasting/claude-code/index.md
+      - Python: code-pasting/python/index.md
   - Nvidia: nvidia/index.md
   - Clouds:
       - Overview: clouds/index.md
