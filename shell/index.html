@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/claude-code/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/shell/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../python/">
       
       
-        <link rel="next" href="../github/">
+        <link rel="next" href="../wsl/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Claude Code - Dirk Petersen's Documentation</title>
+        <title>Shell - Dirk Petersen's Documentation</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#claude-code" class="md-skip">
+        <a href="#shell" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Claude Code
+              Shell
             
           </span>
         </div>
@@ -234,11 +234,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../claude-code/" class="md-tabs__link">
         
   
   
@@ -293,9 +291,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../shell/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -442,32 +442,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Claude Code
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../claude-code/" class="md-nav__link">
         
   
   
@@ -478,203 +456,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-configure-aws-credentials" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Configure AWS Credentials
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-configure-aws-region" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Configure AWS Region
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-install-claude-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Install Claude Code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-create-wrapper-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Create Wrapper Script
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-git-repository-requirement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important: Git Repository Requirement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Important: Git Repository Requirement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-a-git-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Up a Git Repository
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setting Up a Git Repository">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-create-a-local-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 1: Create a Local Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-create-a-repository-on-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 2: Create a Repository on GitHub
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Comparison
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-haiku-fast" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default (Haiku - Fast)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sonnet-balanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sonnet (Balanced)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opus-most-capable" class="md-nav__link">
-    <span class="md-ellipsis">
-      Opus (Most Capable)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips-and-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tips and Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -727,10 +508,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Shell
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -741,6 +544,230 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-key-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Key Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Key Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generating-ssh-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating SSH Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-key-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Key Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-keychain" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Keychain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Keychain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-profile-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell Profile Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Profile Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bash-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zsh Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Environment Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminal-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminal Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminal Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keep-ssh-keys-secure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keep SSH Keys Secure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-agent-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Agent Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-shell-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Shell Aliases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -847,46 +874,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#ssh-key-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      SSH Key Management
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Setup">
+    <nav class="md-nav" aria-label="SSH Key Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-configure-aws-credentials" class="md-nav__link">
+  <a href="#generating-ssh-keys" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Configure AWS Credentials
+      Generating SSH Keys
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-configure-aws-region" class="md-nav__link">
+  <a href="#ssh-key-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Configure AWS Region
+      SSH Key Permissions
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-install-claude-code" class="md-nav__link">
+  <a href="#ssh-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Install Claude Code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-create-wrapper-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Create Wrapper Script
+      SSH Configuration
     </span>
   </a>
   
@@ -898,94 +916,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important-git-repository-requirement" class="md-nav__link">
+  <a href="#ssh-keychain" class="md-nav__link">
     <span class="md-ellipsis">
-      Important: Git Repository Requirement
+      SSH Keychain
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Important: Git Repository Requirement">
+    <nav class="md-nav" aria-label="SSH Keychain">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setting-up-a-git-repository" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting Up a Git Repository
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setting Up a Git Repository">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-create-a-local-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 1: Create a Local Repository
+      Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-2-create-a-repository-on-github" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Option 2: Create a Repository on GitHub
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Comparison
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-haiku-fast" class="md-nav__link">
-    <span class="md-ellipsis">
-      Default (Haiku - Fast)
+      Configuration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sonnet-balanced" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Sonnet (Balanced)
+      How It Works
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#opus-most-capable" class="md-nav__link">
+  <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      Opus (Most Capable)
+      Troubleshooting
     </span>
   </a>
   
@@ -997,18 +967,102 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-notes" class="md-nav__link">
+  <a href="#shell-profile-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration Notes
+      Shell Profile Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Profile Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bash-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zsh Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Environment Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tips-and-best-practices" class="md-nav__link">
+  <a href="#terminal-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips and Best Practices
+      Terminal Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminal Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keep-ssh-keys-secure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keep SSH Keys Secure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-agent-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Agent Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-shell-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Shell Aliases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Development Environment
     </span>
   </a>
   
@@ -1033,160 +1087,175 @@
   
 
 
-<h1 id="claude-code">Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h1>
-<p>Documentation for Claude Code, an AI-powered development tool integrated into this workflow.</p>
+<h1 id="shell">Shell<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h1>
+<p>Unix shell configuration and environment setup for a productive development environment.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Claude Code provides AI-assisted development capabilities for code generation, analysis, and problem-solving. This setup uses AWS Bedrock for model inference, enabling local-first Claude Code execution.</p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<h3 id="1-configure-aws-credentials">1. Configure AWS Credentials<a class="headerlink" href="#1-configure-aws-credentials" title="Permanent link">&para;</a></h3>
-<p>Add your AWS credentials to <code>~/.aws/credentials</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[bedrock]</span>
-<span class="na">aws_access_key_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">XXXXXXXXXXX</span>
-<span class="na">aws_secret_access_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">YYYYYYYYYYYYYYYYY</span>
+<p>This section covers essential shell setup including SSH configuration, terminal tools, and environment variables.</p>
+<h2 id="ssh-key-management">SSH Key Management<a class="headerlink" href="#ssh-key-management" title="Permanent link">&para;</a></h2>
+<p>Secure shell access is critical for development work. This section covers SSH setup with password-protected keys and keychain integration.</p>
+<h3 id="generating-ssh-keys">Generating SSH Keys<a class="headerlink" href="#generating-ssh-keys" title="Permanent link">&para;</a></h3>
+<p>SSH keys should always use a passphrase for security. When generating keys, use a strong password:</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/id_ed25519
 </code></pre></div>
-<h3 id="2-configure-aws-region">2. Configure AWS Region<a class="headerlink" href="#2-configure-aws-region" title="Permanent link">&para;</a></h3>
-<p>Add the Bedrock profile to <code>~/.aws/config</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[profile bedrock]</span>
-<span class="na">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">us-west-2</span>
+<p><strong>Important</strong>: When prompted for a passphrase, enter a strong password. This protects your key if it's ever compromised.</p>
+<h3 id="ssh-key-permissions">SSH Key Permissions<a class="headerlink" href="#ssh-key-permissions" title="Permanent link">&para;</a></h3>
+<p>Ensure proper permissions on your SSH keys:</p>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/id_ed25519
+chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>~/.ssh/id_ed25519.pub
 </code></pre></div>
-<h3 id="3-install-claude-code">3. Install Claude Code<a class="headerlink" href="#3-install-claude-code" title="Permanent link">&para;</a></h3>
-<p>Install Claude Code globally via npm:</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>i<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
-</code></pre></div>
-<h3 id="4-create-wrapper-script">4. Create Wrapper Script<a class="headerlink" href="#4-create-wrapper-script" title="Permanent link">&para;</a></h3>
-<p>Create a wrapper script at <code>~/bin/claude</code> to simplify usage:</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#! /bin/bash</span>
+<h3 id="ssh-configuration">SSH Configuration<a class="headerlink" href="#ssh-configuration" title="Permanent link">&para;</a></h3>
+<p>Create or edit <code>~/.ssh/config</code> to simplify SSH connections:</p>
+<div class="highlight"><pre><span></span><code>Host<span class="w"> </span>github.com
+<span class="w">    </span>HostName<span class="w"> </span>github.com
+<span class="w">    </span>User<span class="w"> </span>git
+<span class="w">    </span>IdentityFile<span class="w"> </span>~/.ssh/id_ed25519
+<span class="w">    </span>AddKeysToAgent<span class="w"> </span>yes
 
-<span class="nb">export</span><span class="w"> </span><span class="nv">CLAUDE_CODE_USE_BEDROCK</span><span class="o">=</span><span class="m">1</span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">AWS_REGION</span><span class="o">=</span>us-west-2
-<span class="nb">export</span><span class="w"> </span><span class="nv">AWS_PROFILE</span><span class="o">=</span>bedrock
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_MODEL</span><span class="o">=</span><span class="s2">&quot;anthropic.claude-sonnet-4-5-20250929-v1:0&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_SMALL_FAST_MODEL</span><span class="o">=</span><span class="s2">&quot;us.anthropic.claude-haiku-4-5-20251001-v1:0&quot;</span>
-
-<span class="nv">mymodel</span><span class="o">=</span><span class="si">${</span><span class="nv">ANTHROPIC_SMALL_FAST_MODEL</span><span class="si">}</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;opus&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span><span class="nv">mymodel</span><span class="o">=</span><span class="nv">$1</span>
-<span class="k">elif</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;sonnet&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span><span class="nv">mymodel</span><span class="o">=</span><span class="s2">&quot;anthropic.claude-sonnet-4-5-20250929-v1:0&quot;</span>
-<span class="k">fi</span>
-
-~/.claude/local/claude<span class="w"> </span>--dangerously-skip-permissions<span class="w"> </span>--model<span class="w"> </span><span class="nv">$mymodel</span><span class="w"> </span><span class="nv">$@</span>
+Host<span class="w"> </span>*
+<span class="w">    </span>ServerAliveInterval<span class="w"> </span><span class="m">60</span>
+<span class="w">    </span>ServerAliveCountMax<span class="w"> </span><span class="m">10</span>
 </code></pre></div>
-<p>Make it executable:</p>
-<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>~/bin/claude
+<p>The <code>AddKeysToAgent yes</code> option automatically adds your key to the SSH agent when you connect.</p>
+<h2 id="ssh-keychain">SSH Keychain<a class="headerlink" href="#ssh-keychain" title="Permanent link">&para;</a></h2>
+<p>Use SSH keychain to securely store your SSH key passphrase in memory, eliminating the need to re-enter it for every SSH command.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p><strong>On Ubuntu/WSL:</strong></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ssh-askpass<span class="w"> </span>ssh-keychain
 </code></pre></div>
-<h2 id="important-git-repository-requirement">Important: Git Repository Requirement<a class="headerlink" href="#important-git-repository-requirement" title="Permanent link">&para;</a></h2>
-<p><strong>Claude Code must always be initialized inside a git repository.</strong> This is a requirement for the tool to function properly.</p>
-<h3 id="setting-up-a-git-repository">Setting Up a Git Repository<a class="headerlink" href="#setting-up-a-git-repository" title="Permanent link">&para;</a></h3>
-<p>You have two options:</p>
-<h4 id="option-1-create-a-local-repository">Option 1: Create a Local Repository<a class="headerlink" href="#option-1-create-a-local-repository" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>my-project
-<span class="nb">cd</span><span class="w"> </span>my-project
-git<span class="w"> </span>init
+<p><strong>On macOS:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Usually included by default</span>
+<span class="c1"># If not: brew install ssh-askpass</span>
 </code></pre></div>
-<p>Then run Claude Code inside this directory:</p>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>.
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
+<p>Add to your shell configuration file (<code>.bashrc</code>, <code>.zshrc</code>, or <code>.profile</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SSH Keychain - loads SSH key passphrase into memory</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
 </code></pre></div>
-<h4 id="option-2-create-a-repository-on-github">Option 2: Create a Repository on GitHub<a class="headerlink" href="#option-2-create-a-repository-on-github" title="Permanent link">&para;</a></h4>
+<p>The <code>-t 4h</code> parameter sets the cache timeout to 4 hours. Adjust as needed.</p>
+<h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Visit <a href="https://github.com/new">github.com/new</a> to create a new repository</li>
-<li>Clone it to your local machine:</li>
+<li>On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase</li>
+<li>Enter your password - it's stored securely in your system keychain</li>
+<li>For the next 4 hours, all SSH connections use the cached passphrase</li>
+<li>After the timeout, you'll be prompted again</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/YOUR_USERNAME/my-project.git
-<span class="nb">cd</span><span class="w"> </span>my-project
+<p>This approach provides security (your key is protected with a password) and convenience (you only type it once per session).</p>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<p>If prompted repeatedly for your passphrase:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if ssh-agent is running</span>
+ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ssh-agent
+
+<span class="c1"># Manually start ssh-agent</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span>
+
+<span class="c1"># Add key manually</span>
+ssh-add<span class="w"> </span>~/.ssh/id_ed25519
 </code></pre></div>
-<ol>
-<li>Run Claude Code:</li>
-</ol>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>.
+<h2 id="shell-profile-setup">Shell Profile Setup<a class="headerlink" href="#shell-profile-setup" title="Permanent link">&para;</a></h2>
+<h3 id="bash-configuration">Bash Configuration<a class="headerlink" href="#bash-configuration" title="Permanent link">&para;</a></h3>
+<p>Edit <code>~/.bashrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add SSH Keychain</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+
+<span class="c1"># Add useful aliases</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>cd..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>clear-cache<span class="o">=</span><span class="s1">&#39;rm -rf ~/.cache&#39;</span>
+
+<span class="c1"># Set default editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Add local bin to PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </code></pre></div>
-<h2 id="model-comparison">Model Comparison<a class="headerlink" href="#model-comparison" title="Permanent link">&para;</a></h2>
-<p>Understanding the differences between the three available models helps you choose the right tool for each task:</p>
-<table>
-<thead>
-<tr>
-<th>Aspect</th>
-<th>Haiku</th>
-<th>Sonnet</th>
-<th>Opus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Speed</strong></td>
-<td>⚡ Fast</td>
-<td>⚡⚡ Medium</td>
-<td>🐌 Slow</td>
-</tr>
-<tr>
-<td><strong>Cost</strong></td>
-<td>💰 $0.80/MTok</td>
-<td>💰💰 $3.00/MTok</td>
-<td>💰💰💰 $15.00/MTok</td>
-</tr>
-<tr>
-<td><strong>Performance</strong></td>
-<td>Excellent</td>
-<td>Very Good</td>
-<td>Superior</td>
-</tr>
-<tr>
-<td><strong>Complex Tasks</strong></td>
-<td>⭐</td>
-<td>⭐⭐⭐ Medium</td>
-<td>⭐⭐⭐⭐⭐ High</td>
-</tr>
-<tr>
-<td><strong>Coding Skills</strong></td>
-<td>⭐⭐ Medium</td>
-<td>⭐⭐⭐ Good</td>
-<td>⭐⭐⭐⭐⭐ Excellent</td>
-</tr>
-</tbody>
-</table>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<h3 id="default-haiku-fast">Default (Haiku - Fast)<a class="headerlink" href="#default-haiku-fast" title="Permanent link">&para;</a></h3>
-<p>Run Claude Code with the default fast Haiku model for quick fixes and simple tasks:</p>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>/path/to/project
+<h3 id="zsh-configuration">Zsh Configuration<a class="headerlink" href="#zsh-configuration" title="Permanent link">&para;</a></h3>
+<p>Edit <code>~/.zshrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add SSH Keychain</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+
+<span class="c1"># Add useful aliases</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>cd..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+
+<span class="c1"># Set default editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Add local bin to PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </code></pre></div>
-<p><strong>Best for:</strong>
-- Quick bug fixes
-- Simple code generation
-- Refactoring small sections
-- Cost-conscious tasks</p>
-<h3 id="sonnet-balanced">Sonnet (Balanced)<a class="headerlink" href="#sonnet-balanced" title="Permanent link">&para;</a></h3>
-<p>Run with the balanced Sonnet model for most development work:</p>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>sonnet<span class="w"> </span>/path/to/project
+<h2 id="essential-environment-variables">Essential Environment Variables<a class="headerlink" href="#essential-environment-variables" title="Permanent link">&para;</a></h2>
+<p>Set these in your shell configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Language</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nb">export</span><span class="w"> </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
+
+<span class="c1"># Path additions</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$HOME</span><span class="s2">/.cargo/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+
+<span class="c1"># Git</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GIT_EDITOR</span><span class="o">=</span>vim
 </code></pre></div>
-<p><strong>Best for:</strong>
-- Complex feature development
-- Detailed code analysis
-- Medium-complexity problems
-- Good balance of speed and capability</p>
-<h3 id="opus-most-capable">Opus (Most Capable)<a class="headerlink" href="#opus-most-capable" title="Permanent link">&para;</a></h3>
-<p>Run with the most capable Opus model for challenging problems:</p>
-<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>opus<span class="w"> </span>/path/to/project
-</code></pre></div>
-<p><strong>Best for:</strong>
-- Difficult architectural decisions
-- Complex problem-solving
-- Full-project analysis
-- Maximum capability required</p>
-<h2 id="configuration-notes">Configuration Notes<a class="headerlink" href="#configuration-notes" title="Permanent link">&para;</a></h2>
+<h2 id="terminal-best-practices">Terminal Best Practices<a class="headerlink" href="#terminal-best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="keep-ssh-keys-secure">Keep SSH Keys Secure<a class="headerlink" href="#keep-ssh-keys-secure" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Bedrock Integration</strong>: Uses AWS Bedrock for model inference</li>
-<li><strong>Context Window</strong>: Defaults to 1M context window for Sonnet</li>
-<li><strong>No Confirmation</strong>: Configured to skip permission prompts for streamlined workflow</li>
-<li><strong>Model Selection</strong>: Easy switching between Haiku (fast), Sonnet (balanced), and Opus (capable)</li>
+<li>Never commit SSH keys to version control</li>
+<li>Never share your private key</li>
+<li>Always use strong passphrases</li>
+<li>Rotate keys periodically</li>
+<li>Use key files only for automated systems</li>
 </ul>
-<h2 id="tips-and-best-practices">Tips and Best Practices<a class="headerlink" href="#tips-and-best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="ssh-agent-security">SSH Agent Security<a class="headerlink" href="#ssh-agent-security" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Use <strong>Haiku</strong> for quick fixes and simple tasks</li>
-<li>Use <strong>Sonnet</strong> for complex development and analysis</li>
-<li>Use <strong>Opus</strong> for challenging problems requiring maximum capability</li>
-<li>Ensure AWS credentials are properly configured before use</li>
-<li>The wrapper script automatically handles model selection and AWS environment setup</li>
+<li>Let keychain manage your passphrase</li>
+<li>Don't store unencrypted passphrases</li>
+<li>Lock your computer when stepping away</li>
+<li>Expire cached passphrases after reasonable time</li>
+</ul>
+<h3 id="command-history">Command History<a class="headerlink" href="#command-history" title="Permanent link">&para;</a></h3>
+<p>Keep your shell history clean:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Increase history size</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">10000</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">10000</span>
+
+<span class="c1"># Ignore duplicate commands</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTCONTROL</span><span class="o">=</span>ignoredups
+
+<span class="c1"># Ignore common commands from history</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTIGNORE</span><span class="o">=</span><span class="s2">&quot;ls:cd:pwd:history&quot;</span>
+</code></pre></div>
+<h2 id="useful-shell-aliases">Useful Shell Aliases<a class="headerlink" href="#useful-shell-aliases" title="Permanent link">&para;</a></h2>
+<p>Add to your shell configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Navigation</span>
+<span class="nb">alias</span><span class="w"> </span>..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
+
+<span class="c1"># Git</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git commit&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gp</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gl</span><span class="o">=</span><span class="s1">&#39;git log&#39;</span>
+
+<span class="c1"># Development</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cls</span><span class="o">=</span><span class="s1">&#39;clear&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">py</span><span class="o">=</span><span class="s1">&#39;python&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+</code></pre></div>
+<h2 id="secure-development-environment">Secure Development Environment<a class="headerlink" href="#secure-development-environment" title="Permanent link">&para;</a></h2>
+<p>Your shell environment should be:</p>
+<ul>
+<li><strong>Secure</strong>: SSH keys protected with passphrases, keychain for convenience</li>
+<li><strong>Clean</strong>: Well-organized bin directories, clear PATH</li>
+<li><strong>Productive</strong>: Useful aliases, proper history management</li>
+<li><strong>Isolated</strong>: Virtual environments for projects, clear separation of concerns</li>
 </ul>
 
 

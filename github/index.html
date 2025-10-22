@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/nvidia/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/github/">
       
       
-        <link rel="prev" href="../aws/">
+        <link rel="prev" href="../claude-code/">
       
+      
+        <link rel="next" href="../python/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Nvidia - Dirk Petersen's Documentation</title>
+        <title>GitHub - Dirk Petersen's Documentation</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nvidia" class="md-skip">
+        <a href="#github" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nvidia
+              GitHub
             
           </span>
         </div>
@@ -251,9 +253,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../github/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -346,11 +350,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../nvidia/" class="md-tabs__link">
         
   
   
@@ -462,10 +464,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    GitHub
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -476,6 +500,170 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-key-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Key Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Key Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSH Key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ssh-key-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add SSH Key to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-ssh-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test SSH Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ssh-keychain-to-store-passwords" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SSH Keychain to Store Passwords
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using SSH Keychain to Store Passwords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-with-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux with WSL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-git-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Git Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Git Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone a Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-and-switch-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create and Switch Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-changes-and-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make Changes and Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-your-first-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning Your First Repository
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -572,32 +760,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Nvidia
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nvidia/" class="md-nav__link">
         
   
   
@@ -608,44 +774,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -677,18 +805,144 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#ssh-key-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      SSH Key Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Key Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSH Key
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#add-ssh-key-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add SSH Key to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-ssh-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test SSH Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
+  <a href="#using-ssh-keychain-to-store-passwords" class="md-nav__link">
     <span class="md-ellipsis">
-      Contents
+      Using SSH Keychain to Store Passwords
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using SSH Keychain to Store Passwords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-with-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux with WSL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-git-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Git Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Git Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone a Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-and-switch-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create and Switch Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-changes-and-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make Changes and Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-your-first-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning Your First Repository
     </span>
   </a>
   
@@ -713,17 +967,95 @@
   
 
 
-<h1 id="nvidia">Nvidia<a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h1>
-<p>GPU acceleration and compute setup guide.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Nvidia GPUs provide hardware acceleration for compute-intensive workloads. This section covers setup, driver configuration, and optimization.</p>
-<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Nvidia driver installation</li>
-<li>CUDA toolkit setup</li>
-<li>GPU optimization and monitoring</li>
-</ul>
-<p><em>More content coming soon...</em></p>
+<h1 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
+<p>Essential setup and configuration for working with GitHub repositories.</p>
+<h2 id="ssh-key-setup">SSH Key Setup<a class="headerlink" href="#ssh-key-setup" title="Permanent link">&para;</a></h2>
+<p>Using SSH keys provides secure, password-free authentication with GitHub. This guide covers generating and configuring SSH keys.</p>
+<h3 id="generate-ssh-key">Generate SSH Key<a class="headerlink" href="#generate-ssh-key" title="Permanent link">&para;</a></h3>
+<p>Generate a new SSH key pair:</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/id_ed25519
+</code></pre></div>
+<p>When prompted for a passphrase, <strong>enter a strong password</strong> to protect your key. You'll enter this password once and it will be stored in your system keychain.</p>
+<h3 id="add-ssh-key-to-github">Add SSH Key to GitHub<a class="headerlink" href="#add-ssh-key-to-github" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Display your public key:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/id_ed25519.pub
+</code></pre></div>
+<ol>
+<li>
+<p>Copy the entire output</p>
+</li>
+<li>
+<p>Go to GitHub Settings → SSH and GPG keys → <a href="https://github.com/settings/ssh/new">New SSH key</a></p>
+</li>
+<li>
+<p>Paste your public key and give it a descriptive title (e.g., "My Laptop")</p>
+</li>
+<li>
+<p>Click "Add SSH key"</p>
+</li>
+</ol>
+<h3 id="test-ssh-connection">Test SSH Connection<a class="headerlink" href="#test-ssh-connection" title="Permanent link">&para;</a></h3>
+<p>Verify your SSH setup:</p>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+</code></pre></div>
+<p>You should see:</p>
+<div class="highlight"><pre><span></span><code>Hi YOUR_USERNAME! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre></div>
+<h2 id="using-ssh-keychain-to-store-passwords">Using SSH Keychain to Store Passwords<a class="headerlink" href="#using-ssh-keychain-to-store-passwords" title="Permanent link">&para;</a></h2>
+<p>Protect your SSH key passphrase by storing it in your system keychain. This way you only enter your password once per session.</p>
+<h3 id="linux-with-wsl">Linux with WSL<a class="headerlink" href="#linux-with-wsl" title="Permanent link">&para;</a></h3>
+<p>For WSL2 on Windows, use ssh-keychain to manage your SSH key passphrase:</p>
+<ol>
+<li><strong>Install ssh-keychain</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ssh-askpass<span class="w"> </span>ssh-keychain
+</code></pre></div>
+<ol>
+<li><strong>Add to your shell configuration</strong> (<code>.bashrc</code>, <code>.zshrc</code>, etc.)</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># SSH Keychain - unlocks SSH key passphrase once per session</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+</code></pre></div>
+<ol>
+<li><strong>Reload your shell</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc<span class="w">  </span><span class="c1"># or ~/.zshrc</span>
+</code></pre></div>
+<ol>
+<li><strong>First SSH command of the session</strong></li>
+</ol>
+<p>On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase. Enter it once and it will be cached in keychain for the next 4 hours.</p>
+<h3 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h3>
+<p>For more details on SSH keychain setup with WSL:
+https://askubuntu.com/questions/1356352/install-ssh-keychain-on-ubuntu-with-wsl</p>
+<h2 id="basic-git-workflow">Basic Git Workflow<a class="headerlink" href="#basic-git-workflow" title="Permanent link">&para;</a></h2>
+<h3 id="clone-a-repository">Clone a Repository<a class="headerlink" href="#clone-a-repository" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:USERNAME/repository.git
+<span class="nb">cd</span><span class="w"> </span>repository
+</code></pre></div>
+<h3 id="create-and-switch-branches">Create and Switch Branches<a class="headerlink" href="#create-and-switch-branches" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/my-feature
+</code></pre></div>
+<h3 id="make-changes-and-commit">Make Changes and Commit<a class="headerlink" href="#make-changes-and-commit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Describe your changes&quot;</span>
+</code></pre></div>
+<h3 id="push-to-github">Push to GitHub<a class="headerlink" href="#push-to-github" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/my-feature
+</code></pre></div>
+<h3 id="create-a-pull-request">Create a Pull Request<a class="headerlink" href="#create-a-pull-request" title="Permanent link">&para;</a></h3>
+<p>After pushing, visit your repository on GitHub and create a pull request to merge your branch.</p>
+<h2 id="cloning-your-first-repository">Cloning Your First Repository<a class="headerlink" href="#cloning-your-first-repository" title="Permanent link">&para;</a></h2>
+<p>Your first GitHub repository can be cloned locally:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:YOUR_USERNAME/your-repo.git
+<span class="nb">cd</span><span class="w"> </span>your-repo
+</code></pre></div>
+<p>Then you can run Claude Code inside:</p>
+<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>.
+</code></pre></div>
 
 
 
