@@ -12,33 +12,26 @@ AWS CLI v2 is the recommended command-line interface for AWS services.
 
 ### Linux/WSL Installation
 
+One-liner to download, extract, install, and verify:
+
 ```bash
-# Download the installer
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-# Unzip
-unzip awscliv2.zip
-
-# Install
-sudo ./aws/install
-
-# Verify installation
-aws --version
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install && aws --version && rm -rf aws awscliv2.zip
 ```
 
 ### macOS Installation
 
+**Using Homebrew (Recommended):**
+
 ```bash
-# Using Homebrew (recommended)
-brew install awscli
+brew install awscli && aws --version
+```
 
-# Or download directly
-curl "https://awscli.amazonaws.com/awscli-exe-macos.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
+**Or manually:**
 
-# Verify
-aws --version
+One-liner to download, extract, install, and verify:
+
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-macos.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install && aws --version && rm -rf aws awscliv2.zip
 ```
 
 ## AWS Credential Setup
