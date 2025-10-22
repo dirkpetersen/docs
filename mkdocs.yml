@@ -36,13 +36,13 @@ plugins:
 
 nav:
   - Home: index.md
-  - Claude Code: claude-code/index.md
-  - GitHub: github/index.md
-  - Python: python/index.md
   - Shell: shell/index.md
-  - WSL: wsl/index.md
-  - AWS: aws/index.md
+  - GitHub: github/index.md
+  - Claude Code: claude-code/index.md
+  - Python: python/index.md
   - Nvidia: nvidia/index.md
+  - AWS: aws/index.md
+  - WSL: wsl/index.md
 
 markdown_extensions:
   - admonition
