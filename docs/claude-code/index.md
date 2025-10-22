@@ -59,35 +59,26 @@ fi
 ~/.claude/local/claude --dangerously-skip-permissions --model $mymodel $@
 ```
 
-### 5. Make Script Executable and Add to PATH
+### 5. Launch Claude Code to Set Up PATH and Permissions
 
-First, create the `~/bin` directory if it doesn't exist:
+Instead of manually configuring PATH and permissions, let Claude Code do it for you:
 
 ```bash
 mkdir -p ~/bin
+bash ~/bin/claude
 ```
 
-Make the script executable:
+When you launch this, Claude Code will:
 
-```bash
-chmod +x ~/bin/claude
-```
-
-Add `~/bin` to your PATH by adding this to your shell configuration (`.bashrc`, `.zshrc`):
-
-```bash
-export PATH="$HOME/bin:$PATH"
-```
-
-Reload your shell:
-
-```bash
-source ~/.bashrc  # or ~/.zshrc
-```
+1. **Ask you to configure your environment** - Claude will detect that `~/bin/claude` needs to be made executable and added to PATH
+2. **Provide setup commands** - Follow Claude's suggestions to:
+   - Make `~/bin/claude` executable: `chmod +x ~/bin/claude`
+   - Add `~/bin` to your PATH by updating `.bashrc` or `.zshrc`
+3. **Reload your shell** - Execute the reload command Claude suggests
 
 ### 6. Test Claude Code
 
-Test that everything is set up correctly:
+Once Claude has helped you set up the environment, launch Claude Code normally:
 
 ```bash
 # Create a test directory
