@@ -15,8 +15,7 @@ New to this setup? Start here:
 
 ### Foundation & Tools
 
-- **[Shell](shell/index.md)** - SSH key management, keychain setup, SSH multiplexing, shell configuration
-- **[WSL](wsl/index.md)** - Windows Subsystem for Linux setup and optimization
+- **[Shell](shell/index.md)** - SSH key management, Git configuration, WSL setup, shell profiles
 - **[GitHub](github/index.md)** - GitHub CLI, SSH authentication, basic Git workflows
 
 ### Development
