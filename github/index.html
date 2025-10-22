@@ -523,31 +523,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SSH Key Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generate-ssh-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate SSH Key
-    </span>
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#add-ssh-key-to-github" class="md-nav__link">
     <span class="md-ellipsis">
       Add SSH Key to GitHub
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Add SSH Key to GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-quick-setup-with-github-cli-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Quick Setup with GitHub CLI (Recommended)
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-ssh-connection" class="md-nav__link">
+  <a href="#option-2-manual-github-web-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Test SSH Connection
+      Option 2: Manual GitHub Web Interface
     </span>
   </a>
   
@@ -559,35 +559,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-ssh-keychain-to-store-passwords" class="md-nav__link">
+  <a href="#test-ssh-connection" class="md-nav__link">
     <span class="md-ellipsis">
-      Using SSH Keychain to Store Passwords
+      Test SSH Connection
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Using SSH Keychain to Store Passwords">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux-with-wsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux with WSL
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -811,31 +787,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SSH Key Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generate-ssh-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate SSH Key
-    </span>
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#add-ssh-key-to-github" class="md-nav__link">
     <span class="md-ellipsis">
       Add SSH Key to GitHub
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Add SSH Key to GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-quick-setup-with-github-cli-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: Quick Setup with GitHub CLI (Recommended)
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-ssh-connection" class="md-nav__link">
+  <a href="#option-2-manual-github-web-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Test SSH Connection
+      Option 2: Manual GitHub Web Interface
     </span>
   </a>
   
@@ -847,35 +823,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-ssh-keychain-to-store-passwords" class="md-nav__link">
+  <a href="#test-ssh-connection" class="md-nav__link">
     <span class="md-ellipsis">
-      Using SSH Keychain to Store Passwords
+      Test SSH Connection
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Using SSH Keychain to Store Passwords">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux-with-wsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux with WSL
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -970,13 +922,50 @@
 <h1 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
 <p>Essential setup and configuration for working with GitHub repositories.</p>
 <h2 id="ssh-key-setup">SSH Key Setup<a class="headerlink" href="#ssh-key-setup" title="Permanent link">&para;</a></h2>
-<p>Using SSH keys provides secure, password-free authentication with GitHub. This guide covers generating and configuring SSH keys.</p>
-<h3 id="generate-ssh-key">Generate SSH Key<a class="headerlink" href="#generate-ssh-key" title="Permanent link">&para;</a></h3>
-<p>Generate a new SSH key pair:</p>
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/id_ed25519
+<p>SSH key generation and keychain management are covered in the <a href="../shell/">Shell</a> section. Follow that guide first to:</p>
+<ol>
+<li>Generate your SSH key with a passphrase</li>
+<li>Configure SSH permissions</li>
+<li>Set up SSH keychain to cache your passphrase</li>
+</ol>
+<p>After completing the Shell setup, come back here to push your key to GitHub.</p>
+<h2 id="add-ssh-key-to-github">Add SSH Key to GitHub<a class="headerlink" href="#add-ssh-key-to-github" title="Permanent link">&para;</a></h2>
+<h3 id="option-1-quick-setup-with-github-cli-recommended">Option 1: Quick Setup with GitHub CLI (Recommended)<a class="headerlink" href="#option-1-quick-setup-with-github-cli-recommended" title="Permanent link">&para;</a></h3>
+<p>The fastest way to add your SSH key to GitHub is using the GitHub CLI:</p>
+<ol>
+<li><strong>Install GitHub CLI</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># On Ubuntu/WSL</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>gh
+
+<span class="c1"># On macOS</span>
+brew<span class="w"> </span>install<span class="w"> </span>gh
+
+<span class="c1"># Or download from https://github.com/cli/cli/releases</span>
 </code></pre></div>
-<p>When prompted for a passphrase, <strong>enter a strong password</strong> to protect your key. You'll enter this password once and it will be stored in your system keychain.</p>
-<h3 id="add-ssh-key-to-github">Add SSH Key to GitHub<a class="headerlink" href="#add-ssh-key-to-github" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Authenticate with GitHub</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>login
+</code></pre></div>
+<p>Follow the prompts:
+- Select "GitHub.com"
+- Select "SSH" for git protocol
+- Use your existing SSH key
+- Authorize GitHub CLI to manage SSH keys</p>
+<ol>
+<li><strong>Automatic SSH key upload</strong></li>
+</ol>
+<p>GitHub CLI will automatically detect your SSH key and upload it to your GitHub account during <code>gh auth login</code>.</p>
+<ol>
+<li><strong>Verify setup</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>status
+</code></pre></div>
+<p>You should see confirmation of your authenticated account.</p>
+<h3 id="option-2-manual-github-web-interface">Option 2: Manual GitHub Web Interface<a class="headerlink" href="#option-2-manual-github-web-interface" title="Permanent link">&para;</a></h3>
+<p>If you prefer the web interface:</p>
 <ol>
 <li>Display your public key:</li>
 </ol>
@@ -996,41 +985,13 @@
 <p>Click "Add SSH key"</p>
 </li>
 </ol>
-<h3 id="test-ssh-connection">Test SSH Connection<a class="headerlink" href="#test-ssh-connection" title="Permanent link">&para;</a></h3>
-<p>Verify your SSH setup:</p>
+<h2 id="test-ssh-connection">Test SSH Connection<a class="headerlink" href="#test-ssh-connection" title="Permanent link">&para;</a></h2>
+<p>Verify your SSH setup works with GitHub:</p>
 <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
 </code></pre></div>
 <p>You should see:</p>
 <div class="highlight"><pre><span></span><code>Hi YOUR_USERNAME! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
 </code></pre></div>
-<h2 id="using-ssh-keychain-to-store-passwords">Using SSH Keychain to Store Passwords<a class="headerlink" href="#using-ssh-keychain-to-store-passwords" title="Permanent link">&para;</a></h2>
-<p>Protect your SSH key passphrase by storing it in your system keychain. This way you only enter your password once per session.</p>
-<h3 id="linux-with-wsl">Linux with WSL<a class="headerlink" href="#linux-with-wsl" title="Permanent link">&para;</a></h3>
-<p>For WSL2 on Windows, use ssh-keychain to manage your SSH key passphrase:</p>
-<ol>
-<li><strong>Install ssh-keychain</strong></li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ssh-askpass<span class="w"> </span>ssh-keychain
-</code></pre></div>
-<ol>
-<li><strong>Add to your shell configuration</strong> (<code>.bashrc</code>, <code>.zshrc</code>, etc.)</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="c1"># SSH Keychain - unlocks SSH key passphrase once per session</span>
-<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
-</code></pre></div>
-<ol>
-<li><strong>Reload your shell</strong></li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc<span class="w">  </span><span class="c1"># or ~/.zshrc</span>
-</code></pre></div>
-<ol>
-<li><strong>First SSH command of the session</strong></li>
-</ol>
-<p>On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase. Enter it once and it will be cached in keychain for the next 4 hours.</p>
-<h3 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h3>
-<p>For more details on SSH keychain setup with WSL:
-https://askubuntu.com/questions/1356352/install-ssh-keychain-on-ubuntu-with-wsl</p>
 <h2 id="basic-git-workflow">Basic Git Workflow<a class="headerlink" href="#basic-git-workflow" title="Permanent link">&para;</a></h2>
 <h3 id="clone-a-repository">Clone a Repository<a class="headerlink" href="#clone-a-repository" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:USERNAME/repository.git
