@@ -37,12 +37,16 @@ plugins:
 nav:
   - Home: index.md
   - Shell: shell/index.md
+  - WSL: wsl/index.md
   - GitHub: github/index.md
   - Claude Code: claude-code/index.md
   - Python: python/index.md
   - Nvidia: nvidia/index.md
-  - AWS: aws/index.md
-  - WSL: wsl/index.md
+  - Clouds:
+      - Overview: clouds/index.md
+      - AWS: clouds/aws/index.md
+      - Azure: clouds/azure/index.md
+      - Google Cloud: clouds/gcp/index.md
 
 markdown_extensions:
   - admonition
