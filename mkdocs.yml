@@ -41,7 +41,7 @@ nav:
       - Basic: shell/basic/index.md
       - SSH: shell/ssh/index.md
       - Git: shell/git/index.md
-  - WSL: wsl/index.md
+      - WSL: shell/wsl/index.md
   - GitHub: github/index.md
   - Claude Code: claude-code/index.md
   - Python: python/index.md
