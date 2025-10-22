@@ -4,10 +4,13 @@ Welcome to Dirk Petersen's documentation site. This is a comprehensive guide to 
 
 ## Topics
 
-- **[Claude Code](claude-code/index.md)** - AI-powered development workflow and integration
+- **[Shell](shell/index.md)** - Unix shell configuration and SSH setup
 - **[WSL](wsl/index.md)** - Windows Subsystem for Linux setup and configuration
-- **[AWS](aws/index.md)** - Cloud infrastructure and services
+- **[GitHub](github/index.md)** - Git version control and GitHub configuration
+- **[Claude Code](claude-code/index.md)** - AI-powered development workflow and integration
+- **[Python](python/index.md)** - Python development with UV and Pixi package managers
 - **[Nvidia](nvidia/index.md)** - GPU acceleration and compute setup
+- **[Clouds](clouds/index.md)** - Cloud platform configuration (AWS, Azure, GCP)
 
 ## About
 
