@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/nvidia/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/code-pasting/">
       
       
-        <link rel="prev" href="../code-pasting/python/">
+        <link rel="prev" href="../shell/wsl/">
       
       
-        <link rel="next" href="../clouds/">
+        <link rel="next" href="markdown/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Nvidia - Dirk Petersen's Documentation</title>
+        <title>Overview - Dirk Petersen's Documentation</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nvidia" class="md-skip">
+        <a href="#code-pasting" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nvidia
+              Overview
             
           </span>
         </div>
@@ -254,11 +254,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../code-pasting/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -274,11 +276,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../nvidia/" class="md-tabs__link">
         
   
   
@@ -553,26 +553,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -585,7 +590,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Code Pasting
@@ -596,10 +601,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../code-pasting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -610,6 +637,215 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-code-pasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why "Code Pasting"?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Four Pillars
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Four Pillars">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Markdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Claude Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-requirements-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Define Requirements (Markdown)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-version-control-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Version Control (GitHub)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-generate-code-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Generate Code (Claude Code)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-iterate-and-refine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Iterate and Refine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why This Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-ai-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      For AI Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Developers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Teams
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-future-of-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Future of Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -622,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-pasting/markdown/" class="md-nav__link">
+      <a href="markdown/" class="md-nav__link">
         
   
   
@@ -645,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-pasting/github/" class="md-nav__link">
+      <a href="github/" class="md-nav__link">
         
   
   
@@ -668,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-pasting/claude-code/" class="md-nav__link">
+      <a href="claude-code/" class="md-nav__link">
         
   
   
@@ -691,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-pasting/python/" class="md-nav__link">
+      <a href="python/" class="md-nav__link">
         
   
   
@@ -718,32 +954,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Nvidia
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nvidia/" class="md-nav__link">
         
   
   
@@ -754,44 +968,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -965,18 +1141,189 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#philosophy" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Philosophy
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
+  <a href="#why-code-pasting" class="md-nav__link">
     <span class="md-ellipsis">
-      Contents
+      Why "Code Pasting"?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Four Pillars
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Four Pillars">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Markdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Claude Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-requirements-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Define Requirements (Markdown)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-version-control-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Version Control (GitHub)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-generate-code-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Generate Code (Claude Code)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-iterate-and-refine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Iterate and Refine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why This Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-ai-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      For AI Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Developers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Teams
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-future-of-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Future of Development
     </span>
   </a>
   
@@ -1001,17 +1348,167 @@
   
 
 
-<h1 id="nvidia">Nvidia<a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h1>
-<p>GPU acceleration and compute setup guide.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Nvidia GPUs provide hardware acceleration for compute-intensive workloads. This section covers setup, driver configuration, and optimization.</p>
-<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<h1 id="code-pasting">Code Pasting<a class="headerlink" href="#code-pasting" title="Permanent link">&para;</a></h1>
+<p>Modern software development through articulate requirements and AI-assisted tooling.</p>
+<h2 id="philosophy">Philosophy<a class="headerlink" href="#philosophy" title="Permanent link">&para;</a></h2>
+<p>In 2025, effective software development is fundamentally about <strong>clear communication of requirements</strong>. The traditional approach of typing code directly is being augmented (and often replaced) by a more refined process:</p>
+<ol>
+<li><strong>Articulate Requirements</strong> - Express what you need clearly</li>
+<li><strong>Document in Markdown</strong> - Use plain text that AI can understand perfectly</li>
+<li><strong>Version Control with GitHub</strong> - Maintain organized, collaborative workflows</li>
+<li><strong>AI-Assisted Development</strong> - Leverage modern tools like Claude Code</li>
+<li><strong>Manage Dependencies</strong> - Handle the complexities of your tech stack</li>
+</ol>
+<p>This approach is more effective than "vibe coding" because it enforces clarity, maintainability, and reproducibility.</p>
+<h2 id="why-code-pasting">Why "Code Pasting"?<a class="headerlink" href="#why-code-pasting" title="Permanent link">&para;</a></h2>
+<p>The term captures the modern workflow:</p>
 <ul>
-<li>Nvidia driver installation</li>
-<li>CUDA toolkit setup</li>
-<li>GPU optimization and monitoring</li>
+<li>You <strong>articulate</strong> your requirements in markdown</li>
+<li>You <strong>paste</strong> them into an AI tool</li>
+<li>The AI <strong>understands</strong> your needs from clear documentation</li>
+<li>You <strong>paste</strong> the generated code into version control</li>
+<li>You <strong>iterate</strong> with feedback and refinement</li>
 </ul>
-<p><em>More content coming soon...</em></p>
+<p>It's not about haphazard copying—it's about purposeful, documented development.</p>
+<h2 id="the-four-pillars">The Four Pillars<a class="headerlink" href="#the-four-pillars" title="Permanent link">&para;</a></h2>
+<h3 id="1-markdown">1. <a href="markdown/">Markdown</a><a class="headerlink" href="#1-markdown" title="Permanent link">&para;</a></h3>
+<p><strong>The Foundation of Communication</strong></p>
+<p>Markdown is the universal language for documentation and requirement specification. When your requirements are in well-structured markdown, AI tools can:
+- Parse structure effortlessly
+- Understand context precisely
+- Generate code that matches your intent
+- Help you iterate on specifications</p>
+<p>Topics:
+- Markdown syntax and best practices
+- Documentation patterns
+- Requirement specification formats
+- Creating effective prompts for AI</p>
+<h3 id="2-github">2. <a href="github/">GitHub</a><a class="headerlink" href="#2-github" title="Permanent link">&para;</a></h3>
+<p><strong>Version Control and Collaboration</strong></p>
+<p>GitHub is the backbone of modern development:
+- Track requirements and changes
+- Collaborate with teams
+- Integrate with AI tools
+- Maintain history and accountability
+- Publish your work</p>
+<p>Topics:
+- SSH authentication and setup
+- GitHub CLI for productivity
+- Git workflows and best practices
+- Collaboration patterns</p>
+<h3 id="3-claude-code">3. <a href="claude-code/">Claude Code</a><a class="headerlink" href="#3-claude-code" title="Permanent link">&para;</a></h3>
+<p><strong>AI-Assisted Development</strong></p>
+<p>Claude Code represents the next generation of development tools:
+- Understands complex requirements
+- Generates production-ready code
+- Operates within git repositories
+- Supports multiple AI models (Haiku, Sonnet, Opus)
+- Integrates with your AWS infrastructure</p>
+<p>Topics:
+- Setup with AWS Bedrock
+- Model selection and usage
+- Integration with git workflows
+- Best practices for AI-assisted coding</p>
+<h3 id="4-python">4. <a href="python/">Python</a><a class="headerlink" href="#4-python" title="Permanent link">&para;</a></h3>
+<p><strong>The Ecosystem of Science and AI</strong></p>
+<p>Python is the primary ecosystem for AI and scientific computing. While language choice varies by use case, Python's ecosystem deserves special attention:
+- ML/AI frameworks (PyTorch, TensorFlow, transformers)
+- Scientific computing (NumPy, SciPy, Pandas)
+- Data visualization and analysis
+- Quirks and best practices unique to Python</p>
+<p>Topics:
+- Modern Python tooling (UV, Pixi)
+- Virtual environments and dependency management
+- Common gotchas and solutions
+- Integration with AI workflows</p>
+<h2 id="the-workflow">The Workflow<a class="headerlink" href="#the-workflow" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-define-requirements-markdown">Step 1: Define Requirements (Markdown)<a class="headerlink" href="#step-1-define-requirements-markdown" title="Permanent link">&para;</a></h3>
+<p>Write clear, structured requirements in markdown:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Feature: User Authentication</span>
+
+<span class="gu">## Requirements</span>
+<span class="k">-</span><span class="w"> </span>Support email/password login
+<span class="k">-</span><span class="w"> </span>Implement password reset flow
+<span class="k">-</span><span class="w"> </span>Add rate limiting
+
+<span class="gu">## Constraints</span>
+<span class="k">-</span><span class="w"> </span>Must support OAuth2
+<span class="k">-</span><span class="w"> </span>Needs TOTP support
+<span class="k">-</span><span class="w"> </span>Database: PostgreSQL
+
+<span class="gu">## Success Criteria</span>
+<span class="k">-</span><span class="w"> </span>All tests pass
+<span class="k">-</span><span class="w"> </span>Performance &lt;100ms for login
+</code></pre></div>
+<h3 id="step-2-version-control-github">Step 2: Version Control (GitHub)<a class="headerlink" href="#step-2-version-control-github" title="Permanent link">&para;</a></h3>
+<p>Commit your requirements to your repository:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>requirements.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add user authentication requirements&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<h3 id="step-3-generate-code-claude-code">Step 3: Generate Code (Claude Code)<a class="headerlink" href="#step-3-generate-code-claude-code" title="Permanent link">&para;</a></h3>
+<p>Paste requirements into Claude Code:</p>
+<div class="highlight"><pre><span></span><code>claude<span class="w"> </span>/path/to/project
+</code></pre></div>
+<p>Provide the requirements document to Claude—the tool understands markdown perfectly and can generate code that matches your specification.</p>
+<h3 id="step-4-iterate-and-refine">Step 4: Iterate and Refine<a class="headerlink" href="#step-4-iterate-and-refine" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Review generated code</li>
+<li>Commit to GitHub</li>
+<li>Update requirements based on learnings</li>
+<li>Re-run Claude Code with updated specs</li>
+<li>Merge and deploy</li>
+</ul>
+<h2 id="why-this-works">Why This Works<a class="headerlink" href="#why-this-works" title="Permanent link">&para;</a></h2>
+<h3 id="for-ai-tools">For AI Tools<a class="headerlink" href="#for-ai-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Markdown is unambiguous</li>
+<li>AI can parse structure reliably</li>
+<li>Plain text avoids parsing errors</li>
+<li>Requirements are self-documenting</li>
+</ul>
+<h3 id="for-developers">For Developers<a class="headerlink" href="#for-developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clear specification prevents miscommunication</li>
+<li>Requirements become documentation</li>
+<li>Easy to iterate with AI</li>
+<li>Entire workflow is versionable</li>
+</ul>
+<h3 id="for-teams">For Teams<a class="headerlink" href="#for-teams" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Markdown enables collaboration</li>
+<li>GitHub provides visibility</li>
+<li>AI tools democratize capabilities</li>
+<li>Python ecosystem is well-established</li>
+</ul>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<ul>
+<li>✅ <strong>Document first</strong> - Start with markdown requirements</li>
+<li>✅ <strong>Be specific</strong> - AI works best with clear specs</li>
+<li>✅ <strong>Use examples</strong> - Show what success looks like</li>
+<li>✅ <strong>Version everything</strong> - Git all requirements and code</li>
+<li>✅ <strong>Iterate together</strong> - Refine with AI feedback</li>
+<li>❌ <strong>Don't assume</strong> - Always specify constraints</li>
+<li>❌ <strong>Skip documentation</strong> - Markdown IS the foundation</li>
+<li>❌ <strong>Ignore edge cases</strong> - Specify them in requirements</li>
+</ul>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start with <a href="markdown/">Markdown</a> to understand documentation best practices</li>
+<li>Set up <a href="github/">GitHub</a> for version control</li>
+<li>Configure <a href="claude-code/">Claude Code</a> for AI-assisted development</li>
+<li>Explore <a href="python/">Python</a> if building AI/ML projects</li>
+</ol>
+<h2 id="the-future-of-development">The Future of Development<a class="headerlink" href="#the-future-of-development" title="Permanent link">&para;</a></h2>
+<p>This approach represents how software development is evolving in 2025:</p>
+<ul>
+<li><strong>Less typing</strong> - AI handles code generation</li>
+<li><strong>More thinking</strong> - Clear specification is paramount</li>
+<li><strong>Better collaboration</strong> - Documentation enables team understanding</li>
+<li><strong>Faster iteration</strong> - AI suggests, you refine</li>
+<li><strong>Reproducible workflows</strong> - Everything is documented and versioned</li>
+</ul>
+<p>By mastering these four pillars, you're not just keeping up with development trends—you're leading the way.</p>
 
 
 
