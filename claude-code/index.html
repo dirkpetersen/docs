@@ -617,9 +617,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-make-script-executable-and-add-to-path" class="md-nav__link">
+  <a href="#5-launch-claude-code-to-set-up-path-and-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Make Script Executable and Add to PATH
+      5. Launch Claude Code to Set Up PATH and Permissions
     </span>
   </a>
   
@@ -1032,9 +1032,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-make-script-executable-and-add-to-path" class="md-nav__link">
+  <a href="#5-launch-claude-code-to-set-up-path-and-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Make Script Executable and Add to PATH
+      5. Launch Claude Code to Set Up PATH and Permissions
     </span>
   </a>
   
@@ -1230,21 +1230,21 @@
 
 ~/.claude/local/claude<span class="w"> </span>--dangerously-skip-permissions<span class="w"> </span>--model<span class="w"> </span><span class="nv">$mymodel</span><span class="w"> </span><span class="nv">$@</span>
 </code></pre></div>
-<h3 id="5-make-script-executable-and-add-to-path">5. Make Script Executable and Add to PATH<a class="headerlink" href="#5-make-script-executable-and-add-to-path" title="Permanent link">&para;</a></h3>
-<p>First, create the <code>~/bin</code> directory if it doesn't exist:</p>
+<h3 id="5-launch-claude-code-to-set-up-path-and-permissions">5. Launch Claude Code to Set Up PATH and Permissions<a class="headerlink" href="#5-launch-claude-code-to-set-up-path-and-permissions" title="Permanent link">&para;</a></h3>
+<p>Instead of manually configuring PATH and permissions, let Claude Code do it for you:</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/bin
+bash<span class="w"> </span>~/bin/claude
 </code></pre></div>
-<p>Make the script executable:</p>
-<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>~/bin/claude
-</code></pre></div>
-<p>Add <code>~/bin</code> to your PATH by adding this to your shell configuration (<code>.bashrc</code>, <code>.zshrc</code>):</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
-</code></pre></div>
-<p>Reload your shell:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc<span class="w">  </span><span class="c1"># or ~/.zshrc</span>
-</code></pre></div>
+<p>When you launch this, Claude Code will:</p>
+<ol>
+<li><strong>Ask you to configure your environment</strong> - Claude will detect that <code>~/bin/claude</code> needs to be made executable and added to PATH</li>
+<li><strong>Provide setup commands</strong> - Follow Claude's suggestions to:</li>
+<li>Make <code>~/bin/claude</code> executable: <code>chmod +x ~/bin/claude</code></li>
+<li>Add <code>~/bin</code> to your PATH by updating <code>.bashrc</code> or <code>.zshrc</code></li>
+<li><strong>Reload your shell</strong> - Execute the reload command Claude suggests</li>
+</ol>
 <h3 id="6-test-claude-code">6. Test Claude Code<a class="headerlink" href="#6-test-claude-code" title="Permanent link">&para;</a></h3>
-<p>Test that everything is set up correctly:</p>
+<p>Once Claude has helped you set up the environment, launch Claude Code normally:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Create a test directory</span>
 mkdir<span class="w"> </span>-p<span class="w"> </span>~/test-project
 <span class="nb">cd</span><span class="w"> </span>~/test-project
