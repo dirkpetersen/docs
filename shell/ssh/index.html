@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/shell/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/shell/ssh/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../basic/">
       
       
-        <link rel="next" href="basic/">
+        <link rel="next" href="../git/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Overview - Dirk Petersen's Documentation</title>
+        <title>SSH - Dirk Petersen's Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shell" class="md-skip">
+        <a href="#shell-ssh-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Dirk Petersen&#39;s Documentation" class="md-header__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
+    <a href="../.." title="Dirk Petersen&#39;s Documentation" class="md-header__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              SSH
             
           </span>
         </div>
@@ -217,7 +217,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -240,7 +240,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -258,7 +258,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../wsl/" class="md-tabs__link">
+      <a href="../../wsl/" class="md-tabs__link">
         
   
   
@@ -277,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../github/" class="md-tabs__link">
+      <a href="../../github/" class="md-tabs__link">
         
   
   
@@ -296,7 +296,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../claude-code/" class="md-tabs__link">
+      <a href="../../claude-code/" class="md-tabs__link">
         
   
   
@@ -315,7 +315,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../python/" class="md-tabs__link">
+      <a href="../../python/" class="md-tabs__link">
         
   
   
@@ -334,7 +334,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../nvidia/" class="md-tabs__link">
+      <a href="../../nvidia/" class="md-tabs__link">
         
   
   
@@ -355,7 +355,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../clouds/" class="md-tabs__link">
+        <a href="../../clouds/" class="md-tabs__link">
           
   
   
@@ -395,7 +395,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dirk Petersen&#39;s Documentation" class="md-nav__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
+    <a href="../.." title="Dirk Petersen&#39;s Documentation" class="md-nav__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -492,6 +492,52 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -509,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    SSH
     
   </span>
   
@@ -522,7 +568,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    SSH
     
   </span>
   
@@ -545,70 +591,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#ssh-key-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      SSH Key Management
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
+    <nav class="md-nav" aria-label="SSH Key Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#set-up-your-environment" class="md-nav__link">
+  <a href="#generating-ssh-keys" class="md-nav__link">
     <span class="md-ellipsis">
-      Set Up Your Environment
+      Generating SSH Keys
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-ssh" class="md-nav__link">
+  <a href="#ssh-key-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Git
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Components
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Shell
+      SSH Key Permissions
     </span>
   </a>
   
@@ -623,10 +627,52 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#git-workflows" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-keychain" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Workflows
+      SSH Keychain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Keychain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
     </span>
   </a>
   
@@ -638,46 +684,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#security-first-approach" class="md-nav__link">
+  <a href="#ssh-security-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Security-First Approach
+      SSH Security Best Practices
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topics-by-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      Topics by Use Case
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Topics by Use Case">
+    <nav class="md-nav" aria-label="SSH Security Best Practices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#remote-server-access" class="md-nav__link">
+  <a href="#keep-ssh-keys-secure" class="md-nav__link">
     <span class="md-ellipsis">
-      Remote Server Access
+      Keep SSH Keys Secure
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-development" class="md-nav__link">
+  <a href="#ssh-agent-security" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Development
+      SSH Agent Security
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#shell-productivity" class="md-nav__link">
+  <a href="#ssh-connection-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Shell Productivity
+      SSH Connection Best Practices
     </span>
   </a>
   
@@ -704,53 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="basic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Basic
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ssh/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SSH
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -780,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wsl/" class="md-nav__link">
+      <a href="../../wsl/" class="md-nav__link">
         
   
   
@@ -802,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../github/" class="md-nav__link">
         
   
   
@@ -824,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../claude-code/" class="md-nav__link">
+      <a href="../../claude-code/" class="md-nav__link">
         
   
   
@@ -846,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         
   
   
@@ -868,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nvidia/" class="md-nav__link">
+      <a href="../../nvidia/" class="md-nav__link">
         
   
   
@@ -933,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/" class="md-nav__link">
+      <a href="../../clouds/" class="md-nav__link">
         
   
   
@@ -956,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/aws/" class="md-nav__link">
+      <a href="../../clouds/aws/" class="md-nav__link">
         
   
   
@@ -979,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/azure/" class="md-nav__link">
+      <a href="../../clouds/azure/" class="md-nav__link">
         
   
   
@@ -1002,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/gcp/" class="md-nav__link">
+      <a href="../../clouds/gcp/" class="md-nav__link">
         
   
   
@@ -1052,70 +1043,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#ssh-key-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      SSH Key Management
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
+    <nav class="md-nav" aria-label="SSH Key Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#set-up-your-environment" class="md-nav__link">
+  <a href="#generating-ssh-keys" class="md-nav__link">
     <span class="md-ellipsis">
-      Set Up Your Environment
+      Generating SSH Keys
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-ssh" class="md-nav__link">
+  <a href="#ssh-key-permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Git
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Components
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic Shell
+      SSH Key Permissions
     </span>
   </a>
   
@@ -1130,10 +1079,52 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#git-workflows" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-keychain" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Workflows
+      SSH Keychain
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH Keychain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
     </span>
   </a>
   
@@ -1145,46 +1136,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#security-first-approach" class="md-nav__link">
+  <a href="#ssh-security-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Security-First Approach
+      SSH Security Best Practices
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topics-by-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      Topics by Use Case
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Topics by Use Case">
+    <nav class="md-nav" aria-label="SSH Security Best Practices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#remote-server-access" class="md-nav__link">
+  <a href="#keep-ssh-keys-secure" class="md-nav__link">
     <span class="md-ellipsis">
-      Remote Server Access
+      Keep SSH Keys Secure
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-development" class="md-nav__link">
+  <a href="#ssh-agent-security" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Development
+      SSH Agent Security
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#shell-productivity" class="md-nav__link">
+  <a href="#ssh-connection-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Shell Productivity
+      SSH Connection Best Practices
     </span>
   </a>
   
@@ -1214,76 +1196,131 @@
   
 
 
-<h1 id="shell">Shell<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h1>
-<p>Unix shell configuration, SSH setup, and Git workflows for a productive development environment.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The Shell section is organized into three key areas:</p>
-<ol>
-<li><strong><a href="basic/">Basic</a></strong> - Shell profiles, environment variables, aliases, and history management</li>
-<li><strong><a href="ssh/">SSH</a></strong> - SSH keys, keychain integration, connection multiplexing, and security best practices</li>
-<li><strong><a href="git/">Git</a></strong> - Git configuration, aliases, workflows, and commit best practices</li>
-</ol>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<h3 id="set-up-your-environment">Set Up Your Environment<a class="headerlink" href="#set-up-your-environment" title="Permanent link">&para;</a></h3>
-<p>Start with <a href="basic/">Basic</a> to configure your shell profile with essential environment variables and aliases.</p>
-<h3 id="configure-ssh">Configure SSH<a class="headerlink" href="#configure-ssh" title="Permanent link">&para;</a></h3>
-<p>Next, follow <a href="ssh/">SSH</a> to generate SSH keys with passphrases and set up keychain for secure, convenient authentication.</p>
-<h3 id="configure-git">Configure Git<a class="headerlink" href="#configure-git" title="Permanent link">&para;</a></h3>
-<p>Finally, set up <a href="git/">Git</a> with global configuration, aliases, and workflows for efficient version control.</p>
-<h2 id="key-components">Key Components<a class="headerlink" href="#key-components" title="Permanent link">&para;</a></h2>
-<h3 id="basic-shell">Basic Shell<a class="headerlink" href="#basic-shell" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Shell profile configuration (Bash/Zsh)</li>
-<li>Environment variables</li>
-<li>Useful aliases</li>
-<li>Command history management</li>
-</ul>
+<h1 id="shell-ssh-configuration">Shell - SSH Configuration<a class="headerlink" href="#shell-ssh-configuration" title="Permanent link">&para;</a></h1>
+<p>SSH key management, keychain setup, and connection optimization.</p>
+<h2 id="ssh-key-management">SSH Key Management<a class="headerlink" href="#ssh-key-management" title="Permanent link">&para;</a></h2>
+<p>Secure shell access is critical for development work. This section covers SSH setup with password-protected keys and keychain integration.</p>
+<h3 id="generating-ssh-keys">Generating SSH Keys<a class="headerlink" href="#generating-ssh-keys" title="Permanent link">&para;</a></h3>
+<p>SSH keys should always use a passphrase for security. When generating keys, use a strong password:</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/id_ed25519
+</code></pre></div>
+<p><strong>Important</strong>: When prompted for a passphrase, enter a strong password. This protects your key if it's ever compromised.</p>
+<h3 id="ssh-key-permissions">SSH Key Permissions<a class="headerlink" href="#ssh-key-permissions" title="Permanent link">&para;</a></h3>
+<p>Ensure proper permissions on your SSH keys:</p>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/id_ed25519
+chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>~/.ssh/id_ed25519.pub
+</code></pre></div>
 <h3 id="ssh-configuration">SSH Configuration<a class="headerlink" href="#ssh-configuration" title="Permanent link">&para;</a></h3>
+<p>Create or edit <code>~/.ssh/config</code> to simplify SSH connections and optimize performance:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SSH Connection Multiplexing and Global Defaults</span>
+Host<span class="w"> </span>*
+<span class="w">    </span>ControlPath<span class="w"> </span>~/.ssh/controlmasters/%r@%h:%p
+<span class="w">    </span>ControlMaster<span class="w"> </span>auto
+<span class="w">    </span>ControlPersist<span class="w"> </span>10m
+<span class="w">    </span>ServerAliveInterval<span class="w"> </span><span class="m">10</span>
+<span class="w">    </span>ServerAliveCountMax<span class="w"> </span><span class="m">3</span>
+<span class="w">    </span>User<span class="w"> </span>your-username
+
+<span class="c1"># GitHub</span>
+Host<span class="w"> </span>github.com
+<span class="w">    </span>HostName<span class="w"> </span>github.com
+<span class="w">    </span>User<span class="w"> </span>git
+<span class="w">    </span>IdentityFile<span class="w"> </span>~/.ssh/id_ed25519
+<span class="w">    </span>AddKeysToAgent<span class="w"> </span>yes
+
+<span class="c1"># Jump Host Example</span>
+Host<span class="w"> </span>jumphost
+<span class="w">    </span>HostName<span class="w"> </span>jump.example.com
+<span class="w">    </span>ControlMaster<span class="w"> </span>auto
+<span class="w">    </span>DynamicForward<span class="w"> </span><span class="m">1080</span>
+
+<span class="c1"># Remote Server Behind Jump Host</span>
+Host<span class="w"> </span>remote-server
+<span class="w">    </span>HostName<span class="w"> </span>server.example.com
+<span class="w">    </span>ProxyJump<span class="w"> </span>jumphost
+</code></pre></div>
+<p><strong>Key Configuration Options:</strong></p>
 <ul>
-<li>Ed25519 key generation with passphrases</li>
-<li>SSH key permissions and security</li>
-<li>SSH multiplexing for faster connections</li>
-<li>SSH keychain for passphrase caching</li>
-<li>Jump host proxy configuration</li>
-<li>Connection optimization</li>
+<li><code>ControlPath</code>: Directory for multiplexed connections (creates <code>.ssh/controlmasters/</code> dir)</li>
+<li><code>ControlMaster auto</code>: Automatically reuse connections</li>
+<li><code>ControlPersist 10m</code>: Keep connections alive for 10 minutes</li>
+<li><code>ServerAliveInterval 10</code>: Send keepalive every 10 seconds</li>
+<li><code>ServerAliveCountMax 3</code>: Disconnect after 3 missed keepalives</li>
+<li><code>ProxyJump</code>: Chain connections through jump host</li>
+<li><code>DynamicForward</code>: Enable SOCKS proxy through host</li>
 </ul>
-<h3 id="git-workflows">Git Workflows<a class="headerlink" href="#git-workflows" title="Permanent link">&para;</a></h3>
+<p><strong>Setup multiplexing directory:</strong></p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.ssh/controlmasters
+chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh/controlmasters
+</code></pre></div>
+<p><strong>Benefits:</strong></p>
 <ul>
-<li>Git configuration and aliases</li>
-<li>Commit message best practices</li>
-<li>Branch naming conventions</li>
-<li>Common Git workflows</li>
-<li>Helpful Git commands</li>
-<li>SSH integration with Git</li>
+<li><strong>Faster connections</strong>: Reuses SSH connections, eliminates repeated authentication</li>
+<li><strong>Reliable</strong>: Keepalive prevents timeouts on idle connections</li>
+<li><strong>Secure</strong>: Jump host proxy keeps direct connections private</li>
+<li><strong>Flexible</strong>: Works with any remote host configuration</li>
 </ul>
-<h2 id="security-first-approach">Security-First Approach<a class="headerlink" href="#security-first-approach" title="Permanent link">&para;</a></h2>
-<p>This setup emphasizes:</p>
+<h2 id="ssh-keychain">SSH Keychain<a class="headerlink" href="#ssh-keychain" title="Permanent link">&para;</a></h2>
+<p>Use SSH keychain to securely store your SSH key passphrase in memory, eliminating the need to re-enter it for every SSH command.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p><strong>On Ubuntu/WSL:</strong></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ssh-askpass<span class="w"> </span>ssh-keychain
+</code></pre></div>
+<p><strong>On macOS:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Usually included by default</span>
+<span class="c1"># If not: brew install ssh-askpass</span>
+</code></pre></div>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
+<p>Add to your shell configuration file (<code>.bashrc</code>, <code>.zshrc</code>, or <code>.profile</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SSH Keychain - loads SSH key passphrase into memory</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+</code></pre></div>
+<p>The <code>-t 4h</code> parameter sets the cache timeout to 4 hours. Adjust as needed.</p>
+<h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase</li>
+<li>Enter your password - it's stored securely in your system keychain</li>
+<li>For the next 4 hours, all SSH connections use the cached passphrase</li>
+<li>After the timeout, you'll be prompted again</li>
+</ol>
+<p>This approach provides security (your key is protected with a password) and convenience (you only type it once per session).</p>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<p>If prompted repeatedly for your passphrase:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if ssh-agent is running</span>
+ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ssh-agent
+
+<span class="c1"># Manually start ssh-agent</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span>
+
+<span class="c1"># Add key manually</span>
+ssh-add<span class="w"> </span>~/.ssh/id_ed25519
+</code></pre></div>
+<h2 id="ssh-security-best-practices">SSH Security Best Practices<a class="headerlink" href="#ssh-security-best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="keep-ssh-keys-secure">Keep SSH Keys Secure<a class="headerlink" href="#keep-ssh-keys-secure" title="Permanent link">&para;</a></h3>
 <ul>
-<li>🔐 <strong>SSH keys with passphrases</strong> - Protecting your keys even if compromised</li>
-<li>🔄 <strong>Keychain caching</strong> - Convenience without sacrificing security</li>
-<li>🚀 <strong>Connection multiplexing</strong> - Faster, more reliable remote access</li>
-<li>📝 <strong>Clear Git workflows</strong> - Organized, traceable development history</li>
-<li>🛡️ <strong>Best practices</strong> - Industry standards for secure shell usage</li>
+<li>Never commit SSH keys to version control</li>
+<li>Never share your private key</li>
+<li>Always use strong passphrases</li>
+<li>Rotate keys periodically</li>
+<li>Use key files only for automated systems</li>
 </ul>
-<h2 id="topics-by-use-case">Topics by Use Case<a class="headerlink" href="#topics-by-use-case" title="Permanent link">&para;</a></h2>
-<h3 id="remote-server-access">Remote Server Access<a class="headerlink" href="#remote-server-access" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Generate SSH keys (<a href="ssh/">SSH</a>)</li>
-<li>Configure SSH multiplexing (<a href="ssh/">SSH</a>)</li>
-<li>Set up jump hosts for secure access (<a href="ssh/">SSH</a>)</li>
-</ol>
-<h3 id="git-development">Git Development<a class="headerlink" href="#git-development" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Configure Git globally (<a href="git/">Git</a>)</li>
-<li>Add Git aliases for productivity (<a href="git/">Git</a>)</li>
-<li>Follow branch naming conventions (<a href="git/">Git</a>)</li>
-</ol>
-<h3 id="shell-productivity">Shell Productivity<a class="headerlink" href="#shell-productivity" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Set up shell profile (<a href="basic/">Basic</a>)</li>
-<li>Add useful aliases (<a href="basic/">Basic</a>)</li>
-<li>Configure environment variables (<a href="basic/">Basic</a>)</li>
-</ol>
+<h3 id="ssh-agent-security">SSH Agent Security<a class="headerlink" href="#ssh-agent-security" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Let keychain manage your passphrase</li>
+<li>Don't store unencrypted passphrases</li>
+<li>Lock your computer when stepping away</li>
+<li>Expire cached passphrases after reasonable time</li>
+</ul>
+<h3 id="ssh-connection-best-practices">SSH Connection Best Practices<a class="headerlink" href="#ssh-connection-best-practices" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use SSH keys instead of passwords</li>
+<li>Keep SSH config clean and organized</li>
+<li>Test connections with <code>ssh -v</code> for debugging</li>
+<li>Monitor SSH access logs regularly</li>
+<li>Disable root login on remote servers</li>
+</ul>
 
 
 
@@ -1332,10 +1369,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://dirkpetersen.github.io/docs/wsl/">
+        <link rel="canonical" href="https://dirkpetersen.github.io/docs/shell/basic/">
       
       
-        <link rel="prev" href="../shell/git/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../github/">
+        <link rel="next" href="../ssh/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>WSL - Dirk Petersen's Documentation</title>
+        <title>Basic - Dirk Petersen's Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows-subsystem-for-linux-wsl" class="md-skip">
+        <a href="#shell-basic-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Dirk Petersen&#39;s Documentation" class="md-header__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
+    <a href="../.." title="Dirk Petersen&#39;s Documentation" class="md-header__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WSL
+              Basic
             
           </span>
         </div>
@@ -217,7 +217,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -234,11 +234,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../shell/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -254,11 +256,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../wsl/" class="md-tabs__link">
         
   
   
@@ -277,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../github/" class="md-tabs__link">
+      <a href="../../github/" class="md-tabs__link">
         
   
   
@@ -296,7 +296,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../claude-code/" class="md-tabs__link">
+      <a href="../../claude-code/" class="md-tabs__link">
         
   
   
@@ -315,7 +315,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../python/" class="md-tabs__link">
+      <a href="../../python/" class="md-tabs__link">
         
   
   
@@ -334,7 +334,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../nvidia/" class="md-tabs__link">
+      <a href="../../nvidia/" class="md-tabs__link">
         
   
   
@@ -355,7 +355,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../clouds/" class="md-tabs__link">
+        <a href="../../clouds/" class="md-tabs__link">
           
   
   
@@ -395,7 +395,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dirk Petersen&#39;s Documentation" class="md-nav__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
+    <a href="../.." title="Dirk Petersen&#39;s Documentation" class="md-nav__button md-logo" aria-label="Dirk Petersen's Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -444,26 +444,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +481,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Shell
@@ -490,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -510,10 +515,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../shell/basic/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Basic
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -524,6 +551,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shell-profile-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell Profile Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Profile Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bash-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zsh Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Environment Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-shell-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Shell Aliases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/ssh/" class="md-nav__link">
+      <a href="../ssh/" class="md-nav__link">
         
   
   
@@ -559,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -586,32 +702,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    WSL
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../wsl/" class="md-nav__link">
         
   
   
@@ -622,44 +716,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -671,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../github/" class="md-nav__link">
         
   
   
@@ -693,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../claude-code/" class="md-nav__link">
+      <a href="../../claude-code/" class="md-nav__link">
         
   
   
@@ -715,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         
   
   
@@ -737,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nvidia/" class="md-nav__link">
+      <a href="../../nvidia/" class="md-nav__link">
         
   
   
@@ -802,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/" class="md-nav__link">
+      <a href="../../clouds/" class="md-nav__link">
         
   
   
@@ -825,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/aws/" class="md-nav__link">
+      <a href="../../clouds/aws/" class="md-nav__link">
         
   
   
@@ -848,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/azure/" class="md-nav__link">
+      <a href="../../clouds/azure/" class="md-nav__link">
         
   
   
@@ -871,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clouds/gcp/" class="md-nav__link">
+      <a href="../../clouds/gcp/" class="md-nav__link">
         
   
   
@@ -921,18 +977,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#shell-profile-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Shell Profile Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Profile Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bash-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bash Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zsh-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zsh Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Environment Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
+  <a href="#useful-shell-aliases" class="md-nav__link">
     <span class="md-ellipsis">
-      Contents
+      Useful Shell Aliases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Development Environment
     </span>
   </a>
   
@@ -957,17 +1064,88 @@
   
 
 
-<h1 id="windows-subsystem-for-linux-wsl">Windows Subsystem for Linux (WSL)<a class="headerlink" href="#windows-subsystem-for-linux-wsl" title="Permanent link">&para;</a></h1>
-<p>Setup and configuration guide for Windows Subsystem for Linux.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>WSL enables running a Linux environment directly on Windows, providing a native Linux development experience without dual-boot or virtualization overhead.</p>
-<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<h1 id="shell-basic-setup">Shell - Basic Setup<a class="headerlink" href="#shell-basic-setup" title="Permanent link">&para;</a></h1>
+<p>Essential shell configuration for a productive Unix environment.</p>
+<h2 id="shell-profile-setup">Shell Profile Setup<a class="headerlink" href="#shell-profile-setup" title="Permanent link">&para;</a></h2>
+<h3 id="bash-configuration">Bash Configuration<a class="headerlink" href="#bash-configuration" title="Permanent link">&para;</a></h3>
+<p>Edit <code>~/.bashrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add SSH Keychain</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+
+<span class="c1"># Add useful aliases</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>cd..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>clear-cache<span class="o">=</span><span class="s1">&#39;rm -rf ~/.cache&#39;</span>
+
+<span class="c1"># Set default editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Add local bin to PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h3 id="zsh-configuration">Zsh Configuration<a class="headerlink" href="#zsh-configuration" title="Permanent link">&para;</a></h3>
+<p>Edit <code>~/.zshrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add SSH Keychain</span>
+<span class="nb">eval</span><span class="w"> </span><span class="k">$(</span>ssh-keychain<span class="w"> </span>-q<span class="w"> </span>-t<span class="w"> </span>4h<span class="w"> </span>~/.ssh/id_ed25519<span class="k">)</span>
+
+<span class="c1"># Add useful aliases</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>cd..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+
+<span class="c1"># Set default editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Add local bin to PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h2 id="essential-environment-variables">Essential Environment Variables<a class="headerlink" href="#essential-environment-variables" title="Permanent link">&para;</a></h2>
+<p>Set these in your shell configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Editor</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim
+
+<span class="c1"># Language</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nb">export</span><span class="w"> </span><span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8
+
+<span class="c1"># Path additions</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$HOME</span><span class="s2">/.cargo/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+
+<span class="c1"># Git</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">GIT_EDITOR</span><span class="o">=</span>vim
+</code></pre></div>
+<h2 id="useful-shell-aliases">Useful Shell Aliases<a class="headerlink" href="#useful-shell-aliases" title="Permanent link">&para;</a></h2>
+<p>Add to your shell configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Navigation</span>
+<span class="nb">alias</span><span class="w"> </span>..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -lah&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
+
+<span class="c1"># Development</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cls</span><span class="o">=</span><span class="s1">&#39;clear&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">py</span><span class="o">=</span><span class="s1">&#39;python&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+</code></pre></div>
+<h2 id="command-history">Command History<a class="headerlink" href="#command-history" title="Permanent link">&para;</a></h2>
+<p>Keep your shell history clean:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Increase history size</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">10000</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">10000</span>
+
+<span class="c1"># Ignore duplicate commands</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTCONTROL</span><span class="o">=</span>ignoredups
+
+<span class="c1"># Ignore common commands from history</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HISTIGNORE</span><span class="o">=</span><span class="s2">&quot;ls:cd:pwd:history&quot;</span>
+</code></pre></div>
+<h2 id="secure-development-environment">Secure Development Environment<a class="headerlink" href="#secure-development-environment" title="Permanent link">&para;</a></h2>
+<p>Your shell environment should be:</p>
 <ul>
-<li>WSL installation and setup</li>
-<li>Distribution configuration</li>
-<li>Development environment configuration</li>
+<li><strong>Secure</strong>: SSH keys protected with passphrases, keychain for convenience</li>
+<li><strong>Clean</strong>: Well-organized bin directories, clear PATH</li>
+<li><strong>Productive</strong>: Useful aliases, proper history management</li>
+<li><strong>Isolated</strong>: Virtual environments for projects, clear separation of concerns</li>
 </ul>
-<p><em>More content coming soon...</em></p>
 
 
 
@@ -1016,10 +1194,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
