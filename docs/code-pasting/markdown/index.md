@@ -279,6 +279,116 @@ with db.session():
 - [GitHub Flavored Markdown](https://github.github.com/gfm/)
 - [Markdown Guide](https://www.markdownguide.org/)
 
+## Writing Markdown in Microsoft Word
+
+### Writage Plugin
+
+For users who prefer writing in Microsoft Word, the **Writage plugin** provides seamless markdown support:
+
+**What is Writage?**
+
+Writage is a plugin for Microsoft Word that allows you to:
+- Write and edit markdown directly in Word
+- Export Word documents to markdown
+- Import markdown files and edit in Word
+- Maintain markdown formatting and structure
+- Use Word's familiar interface for markdown writing
+
+**Installation**
+
+1. Download Writage from [writage.com](https://www.writage.com)
+2. Install the plugin (available for Windows)
+3. Restart Microsoft Word
+4. Writage appears in the Word ribbon
+
+**How to Use Writage**
+
+### Opening Markdown Files
+
+```
+File → Open → Select markdown file (.md)
+Writage automatically detects and formats as markdown
+```
+
+### Creating New Markdown Documents
+
+1. Create new Word document
+2. Go to **Writage** ribbon
+3. Click **Markdown** mode
+4. Write in familiar Word interface
+5. Markdown formatting is applied automatically
+
+### Writing with Markdown Awareness
+
+- Use **Heading Styles** for `# ## ###`
+- Use **Lists** for bullets and numbering
+- Use **Bold/Italic** for `**bold**` and `*italic*`
+- Use **Code** style for inline code
+- Insert **Tables** naturally - Writage handles markdown conversion
+
+### Exporting to Markdown
+
+```
+Writage → Export to Markdown
+Choose location and filename
+File saved as .md with proper formatting
+```
+
+**Benefits of Writage**
+
+- ✅ Use Word's familiar interface
+- ✅ Real-time spell check
+- ✅ Grammar checking
+- ✅ Track changes for collaboration
+- ✅ Export clean markdown for AI tools
+- ✅ No need to learn markdown syntax
+- ✅ Professional document formatting
+
+**Workflow with Writage**
+
+1. **Write Requirements** in Word using Writage
+   - Use heading styles naturally
+   - Create lists and tables visually
+   - Spell/grammar check built-in
+
+2. **Export to Markdown** from Writage
+   - Automatic conversion to `.md` format
+   - All formatting preserved
+
+3. **Commit to GitHub**
+   - Pure markdown files in version control
+   - Easy for AI tools to parse
+
+4. **Paste into Claude Code**
+   - Perfectly formatted requirements
+   - Claude understands structure exactly
+
+### Tips for Best Results
+
+- Use consistent **Heading Styles** (Heading 1, 2, 3)
+- Use **Bullet Lists** instead of typing dashes
+- Create **Tables** using Word's table tools
+- Use **Code** style for snippets
+- Avoid complex formatting (colors, custom fonts)
+- Keep structure simple and hierarchical
+
+### Limitations
+
+- ⚠️ Available for Windows only (not macOS)
+- ⚠️ Some complex Word features don't convert to markdown
+- ⚠️ Keep to standard markdown elements for best results
+- ⚠️ Test export before committing to GitHub
+
+## Alternative: Direct Markdown Editing
+
+If Writage isn't suitable, other options include:
+
+- **VS Code** - Lightweight, free, excellent markdown support
+- **Typora** - Markdown-first editor with live preview
+- **Obsidian** - Knowledge management with markdown
+- **Notion** - Cloud-based with markdown support
+- **GitHub Web Editor** - Edit directly in browser
+
 ## Rendering and Sharing
 
 ### GitHub
@@ -301,11 +411,11 @@ Use tools to create documentation sites:
 
 ## The Markdown-First Workflow
 
-1. **Write Requirements** in markdown
+1. **Write Requirements** in markdown (Word with Writage or your preferred editor)
 2. **Commit to GitHub** for version history
 3. **Paste into Claude Code** for code generation
 4. **Review Output** and iterate
 5. **Commit Code** with markdown specifications
 6. **Share Documentation** in markdown format
 
-This workflow makes development **reproducible, collaborative, and AI-friendly**.
+This workflow makes development **reproducible, collaborative, and AI-friendly**, whether you're writing in Word or a dedicated markdown editor.
