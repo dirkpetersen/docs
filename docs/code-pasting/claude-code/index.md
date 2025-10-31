@@ -203,3 +203,7 @@ claude opus /path/to/project
 - Use **Opus** for challenging problems requiring maximum capability
 - Ensure AWS credentials are properly configured before use
 - The wrapper script automatically handles model selection and AWS environment setup
+
+## Next: Complete Project Development Workflow
+
+Ready to develop a full project with Claude Code? Follow the **[Claude Code Tutorial](tutorial.md)** for the complete step-by-step workflow using the recommended Haiku → Sonnet → Opus escalation strategy.

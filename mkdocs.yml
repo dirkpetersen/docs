@@ -33,6 +33,36 @@ theme:
 
 plugins:
   - search
+  - ai-search:
+      enabled: true
+      mode: development
+
+      # AWS Bedrock Configuration
+      bedrock_profile: bedrock
+      bedrock_region: us-west-2
+      model_haiku: us.anthropic.claude-haiku-4-5-20251001-v1:0
+      model_sonnet: us.anthropic.claude-sonnet-4-5-20250929-v1:0
+      auto_select_model: true
+      max_tokens: 4000
+      temperature: 0.3
+      haiku_threshold: 200000
+
+      # Development server
+      dev_server_port: 8001
+      dev_server_host: localhost
+
+      # Context options
+      include_code: true
+      include_navigation: true
+      max_context_tokens: 900000
+      exclude_patterns: []
+
+      # UI options
+      show_thinking: true
+      stream_responses: true
+      show_sources: true
+      cache_duration: 3600
+      fallback_enabled: true
 
 nav:
   - Home: index.md
@@ -46,7 +76,9 @@ nav:
       - Overview: code-pasting/index.md
       - Markdown: code-pasting/markdown/index.md
       - GitHub: code-pasting/github/index.md
-      - Claude Code: code-pasting/claude-code/index.md
+      - Claude Code:
+          - Overview: code-pasting/claude-code/index.md
+          - Tutorial: code-pasting/claude-code/tutorial.md
       - Python: code-pasting/python/index.md
   - Nvidia: nvidia/index.md
   - Clouds:
