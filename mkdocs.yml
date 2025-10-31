@@ -47,7 +47,7 @@ nav:
       - Markdown: code-pasting/markdown/index.md
       - GitHub: code-pasting/github/index.md
       - Claude Code:
-          - Overview: code-pasting/claude-code/index.md
+          - Main: code-pasting/claude-code/index.md
           - Tutorial: code-pasting/claude-code/tutorial.md
       - Python: code-pasting/python/index.md
   - Nvidia: nvidia/index.md
