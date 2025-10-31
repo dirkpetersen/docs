@@ -11,21 +11,35 @@ New to this setup? Start here:
 
 ## Complete Documentation
 
-### Foundation & Tools
+### Shell Configuration
 
-- **[Shell](shell/index.md)** - SSH key management, Git configuration, WSL setup, shell profiles
+- **[Overview](shell/index.md)** - Shell configuration foundation
+- **[Basic](shell/basic/index.md)** - PATH, aliases, color schemes, SSH keychain
+- **[SSH](shell/ssh/index.md)** - SSH keys, multiplexing, jump hosts
+- **[Git](shell/git/index.md)** - Git configuration, aliases, 2025 best practices
+- **[WSL](shell/wsl/index.md)** - Windows Subsystem for Linux setup and optimization
 
-### Development (Code Pasting)
+### Code Pasting & Development
 
-- **[Markdown](code-pasting/markdown/index.md)** - Documentation and requirement specification for AI
-- **[GitHub](code-pasting/github/index.md)** - Version control and collaboration
-- **[Claude Code](code-pasting/claude-code/index.md)** - AI-assisted development with Bedrock
-- **[Python](code-pasting/python/index.md)** - Ecosystem for AI and scientific computing
+- **[Overview](code-pasting/index.md)** - Code Pasting philosophy and workflow
+- **[Markdown](code-pasting/markdown/index.md)** - AI-friendly documentation and requirements
+  - [Writage](code-pasting/markdown/index.md#writage-microsoft-word-plugin) - Microsoft Word markdown editing
+- **[GitHub](code-pasting/github/index.md)** - SSH keys, GitHub CLI, authentication
+- **[Claude Code](code-pasting/claude-code/index.md)** - AI-assisted development setup
+  - [Main Setup](code-pasting/claude-code/index.md) - Bedrock integration and model selection
+  - [Tutorial](code-pasting/claude-code/tutorial.md) - Complete project workflow (Haiku → Sonnet → Opus)
+- **[Python](code-pasting/python/index.md)** - Indigo distribution, UV, Pixi package managers
 
-### Infrastructure
+### Cloud Platforms
 
-- **[Nvidia](nvidia/index.md)** - GPU acceleration, CUDA, and compute optimization
-- **[Clouds](clouds/index.md)** - Multi-cloud setup for AWS, Azure, and Google Cloud
+- **[Overview](clouds/index.md)** - Multi-cloud strategy
+- **[AWS](clouds/aws/index.md)** - CLI v2 setup, credentials, IAM profiles, Bedrock integration
+- **[Azure](clouds/azure/index.md)** - Azure configuration and setup
+- **[Google Cloud](clouds/gcp/index.md)** - Google Cloud platform setup
+
+### Infrastructure & Hardware
+
+- **[Nvidia](nvidia/index.md)** - GPU acceleration, CUDA, compute optimization
 
 ## Key Features
 
