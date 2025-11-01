@@ -23,7 +23,7 @@ New to this setup? Start here:
 
 - **[Overview](code-pasting/index.md)** - Code Pasting philosophy and workflow
 - **[Markdown](code-pasting/markdown/index.md)** - AI-friendly documentation and requirements
-    - [Writage](code-pasting/markdown/index.md#writage-microsoft-word-plugin) - Microsoft Word markdown editing
+    - [Writage Plugin](code-pasting/markdown/index.md#writage-plugin) - Microsoft Word markdown editing
 - **[GitHub](code-pasting/github/index.md)** - SSH keys, GitHub CLI, authentication
 - **[Claude Code](code-pasting/claude-code/index.md)** - AI-assisted development setup
     - [Main Setup](code-pasting/claude-code/index.md) - Bedrock integration and model selection
