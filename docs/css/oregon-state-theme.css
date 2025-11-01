@@ -1,0 +1,267 @@
+/* Oregon State University-Inspired Theme for MkDocs Material */
+/* Custom overrides for burnt orange accents and institutional design */
+
+:root {
+  --oregon-burnt-orange: #c34500;
+  --oregon-dark-gray: #373737;
+  --oregon-cream: #f5f2ed;
+  --oregon-light-gray: #f0ede8;
+}
+
+/* Primary accent color - burnt orange */
+.md-header,
+.md-typeset a,
+.md-tabs__link--active,
+.md-icon:hover,
+.md-search__inner:focus-within {
+  --md-primary-fg-color: var(--oregon-burnt-orange);
+}
+
+/* Header styling */
+.md-header {
+  background-color: var(--oregon-dark-gray);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.md-header__button:hover,
+.md-header__button:focus {
+  background-color: var(--oregon-burnt-orange);
+}
+
+/* Navigation styling */
+.md-nav__link:hover,
+.md-nav__link--active {
+  color: var(--oregon-burnt-orange);
+  border-left: 3px solid var(--oregon-burnt-orange);
+  padding-left: calc(1.2rem - 3px);
+}
+
+/* Tabs - highlight active tab with burnt orange border */
+.md-tabs {
+  background-color: #fafafa;
+  border-bottom: 3px solid var(--oregon-burnt-orange);
+}
+
+.md-tabs__link--active {
+  color: var(--oregon-burnt-orange);
+  border-bottom: 2px solid var(--oregon-burnt-orange);
+}
+
+/* Content background - cream color for sections */
+.md-typeset {
+  background-color: var(--oregon-cream);
+}
+
+/* Section backgrounds with subtle borders */
+.md-typeset section {
+  background-color: white;
+  border-left: 4px solid var(--oregon-burnt-orange);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Headings - serif-inspired with hierarchy */
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--oregon-dark-gray);
+  font-weight: 700;
+  border-bottom: 2px solid var(--oregon-burnt-orange);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--oregon-burnt-orange);
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+/* Links with burnt orange hover effect */
+.md-typeset a {
+  color: var(--oregon-burnt-orange);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.md-typeset a:hover {
+  border-bottom: 1px solid var(--oregon-burnt-orange);
+}
+
+/* Code blocks with subtle styling */
+.md-typeset pre {
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--oregon-burnt-orange);
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.md-typeset code {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Blockquotes with burnt orange left border */
+.md-typeset blockquote {
+  border-left: 4px solid var(--oregon-burnt-orange);
+  color: #666;
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+}
+
+/* Tables with alternating rows */
+.md-typeset table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.md-typeset table th {
+  background-color: var(--oregon-burnt-orange);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.md-typeset table td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+}
+
+.md-typeset table tr:nth-child(even) {
+  background-color: var(--oregon-light-gray);
+}
+
+/* Admonition styling with burnt orange accent */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left: 4px solid var(--oregon-burnt-orange);
+  border-radius: 2px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  color: var(--oregon-burnt-orange);
+  font-weight: 600;
+  margin: -1rem -1rem 0.5rem -1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--oregon-light-gray);
+}
+
+/* Button styling - burnt orange */
+.md-button {
+  background-color: var(--oregon-burnt-orange);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.md-button:hover {
+  background-color: #a83700;
+}
+
+.md-button--primary {
+  background-color: var(--oregon-burnt-orange);
+}
+
+/* Sidebar navigation */
+.md-nav {
+  background-color: white;
+}
+
+.md-nav__link {
+  color: #333;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+/* Search box styling */
+.md-search__input {
+  background-color: white;
+  border-bottom: 2px solid var(--oregon-burnt-orange);
+}
+
+.md-search__input::placeholder {
+  color: #999;
+}
+
+/* Footer styling */
+.md-footer {
+  background-color: var(--oregon-dark-gray);
+  color: white;
+}
+
+.md-footer__link {
+  color: var(--oregon-burnt-orange);
+}
+
+.md-footer__link:hover {
+  text-decoration: underline;
+}
+
+/* TOC (Table of Contents) styling */
+.md-nav__link--active {
+  color: var(--oregon-burnt-orange);
+  font-weight: 600;
+}
+
+/* Lists with better spacing */
+.md-typeset ul,
+.md-typeset ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.md-typeset li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Definition lists */
+.md-typeset dl dt {
+  color: var(--oregon-burnt-orange);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.md-typeset dl dd {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Overall typography improvements */
+.md-typeset {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.md-typeset p {
+  margin: 1rem 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+  .md-typeset h1,
+  .md-typeset h2 {
+    font-size: 1.5rem;
+  }
+
+  .md-typeset section {
+    border-left-width: 3px;
+  }
+
+  .md-container {
+    padding: 1rem;
+  }
+}

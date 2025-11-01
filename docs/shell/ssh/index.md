@@ -16,15 +16,52 @@ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_ed25519
 
 **Important**: When prompted for a passphrase, enter a strong password. This protects your key if it's ever compromised.
 
-### SSH Key Permissions
+### SSH Keychain
 
-Ensure proper permissions on your SSH keys:
+Use SSH keychain to securely store your SSH key passphrase in memory, eliminating the need to re-enter it for every SSH command.
+
+#### Installation
+
+**On Ubuntu/WSL:**
 
 ```bash
-chmod 700 ~/.ssh
-chmod 600 ~/.ssh/id_ed25519
-chmod 644 ~/.ssh/id_ed25519.pub
+sudo apt-get update
+sudo apt-get install ssh-askpass keychain
 ```
+
+**On macOS:**
+
+```bash
+# Usually included by default
+# If not: brew install keychain
+```
+
+#### Configuration
+
+Add to your login shell configuration file (`.profile` or `.bash_profile`, not `.bashrc` or `.zshrc`):
+
+```bash
+# SSH Keychain - loads SSH key passphrase into memory
+# Only run on interactive login shells (not in Slurm jobs)
+[ -z $SLURM_PTY_PORT ] && eval $(keychain --quiet --eval id_ed25519)
+```
+
+The keychain setup should be in `.profile` or `.bash_profile` because:
+- These files run only on login shells (when you first log in)
+- `.bashrc` and `.zshrc` run on every shell invocation (including non-interactive ones)
+- This prevents redundant keychain initialization
+
+**Important for HPC**: The `[ -z $SLURM_PTY_PORT ]` check prevents keychain from running inside Slurm job steps, where PTY management is handled by Slurm.
+
+#### How It Works
+
+1. On your first SSH/Git command after login, you'll be prompted for your SSH key passphrase
+2. Enter your password - it's stored securely in your system keychain
+3. The passphrase persists in the keychain **until you reboot your computer**
+4. All subsequent SSH connections reuse the cached passphrase without prompting
+5. After reboot, you'll be prompted for your passphrase again on first use
+
+This approach provides both security (your key is protected with a passphrase) and exceptional convenience (you only type your passphrase once per boot, not per session).
 
 ### SSH Configuration
 
@@ -83,47 +120,24 @@ chmod 700 ~/.ssh/controlmasters
 - **Secure**: Jump host proxy keeps direct connections private
 - **Flexible**: Works with any remote host configuration
 
-## SSH Keychain
+## Troubleshooting
 
-Use SSH keychain to securely store your SSH key passphrase in memory, eliminating the need to re-enter it for every SSH command.
+### SSH Key Permissions
 
-### Installation
-
-**On Ubuntu/WSL:**
+Ensure proper permissions on your SSH keys - incorrect permissions can prevent SSH authentication:
 
 ```bash
-sudo apt-get update
-sudo apt-get install ssh-askpass keychain
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_ed25519
+chmod 644 ~/.ssh/id_ed25519.pub
 ```
 
-**On macOS:**
+**Explanation:**
+- `~/.ssh` directory: `700` (rwx------) - only owner can access
+- Private key: `600` (rw-------) - only owner can read/write
+- Public key: `644` (rw-r--r--) - readable by others, writable only by owner
 
-```bash
-# Usually included by default
-# If not: brew install keychain
-```
-
-### Configuration
-
-Add to your shell configuration file (`.bashrc`, `.zshrc`, or `.profile`):
-
-```bash
-# SSH Keychain - loads SSH key passphrase into memory
-eval $(ssh-keychain -q -t 4h ~/.ssh/id_ed25519)
-```
-
-The `-t 4h` parameter sets the cache timeout to 4 hours. Adjust as needed.
-
-### How It Works
-
-1. On your first SSH/Git command of the session, you'll be prompted for your SSH key passphrase
-2. Enter your password - it's stored securely in your system keychain
-3. For the next 4 hours, all SSH connections use the cached passphrase
-4. After the timeout, you'll be prompted again
-
-This approach provides security (your key is protected with a password) and convenience (you only type it once per session).
-
-### Troubleshooting
+### Keychain Not Working
 
 If prompted repeatedly for your passphrase:
 
@@ -137,6 +151,13 @@ eval $(ssh-agent -s)
 # Add key manually
 ssh-add ~/.ssh/id_ed25519
 ```
+
+### SSH Connection Issues
+
+- Test connections with `ssh -v` for verbose debugging
+- Check SSH config syntax: `ssh -T git@github.com`
+- Verify remote host is accepting your key
+- Ensure firewall isn't blocking port 22
 
 ## SSH Security Best Practices
 
@@ -153,12 +174,10 @@ ssh-add ~/.ssh/id_ed25519
 - Let keychain manage your passphrase
 - Don't store unencrypted passphrases
 - Lock your computer when stepping away
-- Expire cached passphrases after reasonable time
 
 ### SSH Connection Best Practices
 
 - Use SSH keys instead of passwords
 - Keep SSH config clean and organized
-- Test connections with `ssh -v` for debugging
 - Monitor SSH access logs regularly
 - Disable root login on remote servers

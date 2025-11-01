@@ -58,6 +58,9 @@ nav:
       - Azure: clouds/azure/index.md
       - Google Cloud: clouds/gcp/index.md
 
+extra_css:
+  - css/oregon-state-theme.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
