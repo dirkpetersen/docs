@@ -41,6 +41,10 @@ New to this setup? Start here:
 
 - **[Nvidia](nvidia/index.md)** - GPU acceleration, CUDA, compute optimization
 
+### Reference
+
+- **[Software](software/index.md)** - Alphabetical dictionary of all software and tools mentioned in this documentation
+
 ## Key Features
 
 ### Security-First Design

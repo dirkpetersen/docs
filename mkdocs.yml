@@ -51,6 +51,7 @@ nav:
           - Tutorial: code-pasting/claude-code/tutorial.md
       - Python: code-pasting/python/index.md
   - Nvidia: nvidia/index.md
+  - Software: software/index.md
   - Clouds:
       - Overview: clouds/index.md
       - AWS: clouds/aws/index.md
