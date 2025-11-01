@@ -93,14 +93,14 @@ Use SSH keychain to securely store your SSH key passphrase in memory, eliminatin
 
 ```bash
 sudo apt-get update
-sudo apt-get install ssh-askpass ssh-keychain
+sudo apt-get install ssh-askpass keychain
 ```
 
 **On macOS:**
 
 ```bash
 # Usually included by default
-# If not: brew install ssh-askpass
+# If not: brew install keychain
 ```
 
 ### Configuration
