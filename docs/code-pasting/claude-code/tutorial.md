@@ -25,7 +25,7 @@ git init
 ### Write a Comprehensive README
 
 ```bash
-nano README.MD
+nano README.md
 ```
 
 In the README file, describe your project in detail:
@@ -131,7 +131,7 @@ Once Claude Code is running:
 ```
 
 Claude will:
-- Read the README.MD file
+- Read the README.md file
 - Analyze your requirements
 - Create a project inventory
 - Generate a CLAUDE.md file with implementation tasks
@@ -281,7 +281,7 @@ Opus will provide deeper analysis and solutions.
 $ mkdir weather-analyzer
 $ cd weather-analyzer
 $ git init
-$ nano README.MD
+$ nano README.md
 # [write your README as shown above]
 # [save and exit]
 $ claude sonnet
@@ -428,7 +428,7 @@ During planning questions, you can be very specific:
 ## Workflow Checklist
 
 - [ ] Created project directory and git initialized
-- [ ] Wrote comprehensive README.MD with all project details
+- [ ] Wrote comprehensive README.md with all project details
 - [ ] Ran Sonnet with `/init` to generate plan
 - [ ] Reviewed generated CLAUDE.md file
 - [ ] Answered all Sonnet clarification questions
@@ -467,8 +467,8 @@ aws bedrock list-foundation-models --region us-west-2 --profile bedrock
 # Make sure you're in a git repository
 git status  # Should show git repository info
 
-# Make sure README.MD exists
-ls -la README.MD
+# Make sure README.md exists
+ls -la README.md
 ```
 
 ### Model switching issues
